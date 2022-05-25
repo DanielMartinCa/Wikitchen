@@ -1,0 +1,11 @@
+uuid: fe000045-f5c5-4838-a8e5-4ef8da414565
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contenido_prueba
+id: node.contenido_prueba
+target_entity_type_id: node
+target_bundle: contenido_prueba
+default_langcode: site_default
+language_alterable: false
