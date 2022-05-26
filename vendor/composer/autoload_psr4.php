@@ -6,6 +6,8 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'lsolesen\\pel\\' => array($vendorDir . '/lsolesen/pel/src'),
+    'cweagans\\Composer\\' => array($vendorDir . '/cweagans/composer-patches/src'),
     'Webmozart\\PathUtil\\' => array($vendorDir . '/webmozart/path-util/src'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
@@ -61,6 +63,7 @@ return array(
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'Grasmash\\Expander\\' => array($vendorDir . '/grasmash/expander/src'),
+    'FontLib\\' => array($vendorDir . '/phenx/php-font-lib/src/FontLib'),
     'Enlightn\\SecurityChecker\\' => array($vendorDir . '/enlightn/security-checker/src'),
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/src'),
     'Drush\\' => array($vendorDir . '/drush/drush/src'),

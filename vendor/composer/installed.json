@@ -924,6 +924,57 @@
             "install-path": "../consolidation/site-process"
         },
         {
+            "name": "cweagans/composer-patches",
+            "version": "1.7.2",
+            "version_normalized": "1.7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cweagans/composer-patches.git",
+                "reference": "e9969cfc0796e6dea9b4e52f77f18e1065212871"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/e9969cfc0796e6dea9b4e52f77f18e1065212871",
+                "reference": "e9969cfc0796e6dea9b4e52f77f18e1065212871",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0 || ~2.0",
+                "phpunit/phpunit": "~4.6"
+            },
+            "time": "2022-01-25T19:21:20+00:00",
+            "type": "composer-plugin",
+            "extra": {
+                "class": "cweagans\\Composer\\Patches"
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "cweagans\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cameron Eagans",
+                    "email": "me@cweagans.net"
+                }
+            ],
+            "description": "Provides a way to patch Composer packages.",
+            "support": {
+                "issues": "https://github.com/cweagans/composer-patches/issues",
+                "source": "https://github.com/cweagans/composer-patches/tree/1.7.2"
+            },
+            "install-path": "../cweagans/composer-patches"
+        },
+        {
             "name": "dflydev/dot-access-data",
             "version": "v3.0.1",
             "version_normalized": "3.0.1.0",
@@ -1232,6 +1283,242 @@
             ],
             "abandoned": "roave/better-reflection",
             "install-path": "../doctrine/reflection"
+        },
+        {
+            "name": "drupal/allowed_formats",
+            "version": "1.5.0",
+            "version_normalized": "1.5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/allowed_formats.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/allowed_formats-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "dbf61bee7aec87beaa2cf307c1d0d9d5b896328c"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1648060331",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Northern Commerce (formerly Digital Echidna)",
+                    "homepage": "https://www.drupal.org/northern-commerce-formerly-digital-echidna",
+                    "role": "Supporting organization"
+                },
+                {
+                    "name": "Jordan Thompson (nord102)",
+                    "homepage": "https://www.drupal.org/u/nord102",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Wunder",
+                    "homepage": "https://www.drupal.org/wunder",
+                    "role": "Supporting organization"
+                },
+                {
+                    "name": "Florian Loretan (floretan)",
+                    "homepage": "https://www.drupal.org/u/floretan",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Limit which text formats are available for each field instance.",
+            "homepage": "https://www.drupal.org/project/allowed_formats",
+            "support": {
+                "source": "http://cgit.drupalcode.org/allowed_formats",
+                "issues": "https://www.drupal.org/project/issues/allowed_formats"
+            },
+            "install-path": "../../web/modules/contrib/allowed_formats"
+        },
+        {
+            "name": "drupal/block_form_alter",
+            "version": "1.2.0",
+            "version_normalized": "1.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_form_alter.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_form_alter-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "c88a0ffd31be9e77552ad7fa43ab85ee949c2127"
+            },
+            "require": {
+                "drupal/core": "^8.0|^9.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1609796972",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Burge",
+                    "homepage": "https://www.drupal.org/u/chris-burge",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides block form alter functions.",
+            "homepage": "https://www.drupal.org/project/block_form_alter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/block_form_alter",
+                "issues": "https://www.drupal.org/project/issues/block_form_alter"
+            },
+            "install-path": "../../web/modules/contrib/block_form_alter"
+        },
+        {
+            "name": "drupal/color_field",
+            "version": "2.5.0",
+            "version_normalized": "2.5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/color_field.git",
+                "reference": "8.x-2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/color_field-8.x-2.5.zip",
+                "reference": "8.x-2.5",
+                "shasum": "9b0d299cb24d3cb21c7fb6a6a08d32ae5aed8652"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/core-recommended": "*",
+                "drupal/token": "~1.3"
+            },
+            "suggest": {
+                "bower-asset/jquery-simple-color": "^v1.2.2: Provides JavaScript library necessary for the Color Grid widget",
+                "bower-asset/spectrum": "^1.8: Provides JavaScript library necessary for Spectrum widget."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.5",
+                    "datestamp": "1632938098",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "targoo",
+                    "homepage": "https://www.drupal.org/user/431910",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Nick Wilde",
+                    "homepage": "https://www.drupal.org/user/nickwilde",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides a color field type to store the color value and opacity",
+            "homepage": "https://www.drupal.org/project/color_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/color_field",
+                "issues": "https://www.drupal.org/project/issues/color_field?version=8.x"
+            },
+            "install-path": "../../web/modules/contrib/color_field"
+        },
+        {
+            "name": "drupal/colorbutton",
+            "version": "1.3.0",
+            "version_normalized": "1.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/colorbutton.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/colorbutton-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "1a3c8996b1db88e30a512d1a329e570160d783df"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/panelbutton": "^1.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1626792032",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "ddrozdik",
+                    "homepage": "https://www.drupal.org/user/574124"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                }
+            ],
+            "description": "Adds the Color Button plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/colorbutton",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/colorbutton",
+                "issues": "http://drupal.org/project/issues/colorbutton"
+            },
+            "install-path": "../../web/modules/contrib/colorbutton"
         },
         {
             "name": "drupal/core",
@@ -1665,6 +1952,1584 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "install-path": null
+        },
+        {
+            "name": "drupal/ctools",
+            "version": "3.7.0",
+            "version_normalized": "3.7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ctools.git",
+                "reference": "8.x-3.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.7.zip",
+                "reference": "8.x-3.7",
+                "shasum": "b11c0981a1d2ab3cc9e8e614a337d8e2a2a70c0e"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.7",
+                    "datestamp": "1623860918",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-3.x": "3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Vanderwater (EclipseGc)",
+                    "homepage": "https://www.drupal.org/u/eclipsegc",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jakob Perry (japerry)",
+                    "homepage": "https://www.drupal.org/u/japerry",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Tim Plunkett (tim.plunkett)",
+                    "homepage": "https://www.drupal.org/u/timplunkett",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "James Gilliland (neclimdul)",
+                    "homepage": "https://www.drupal.org/u/neclimdul",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Daniel Wehner (dawehner)",
+                    "homepage": "https://www.drupal.org/u/dawehner",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "merlinofchaos",
+                    "homepage": "https://www.drupal.org/user/26979"
+                },
+                {
+                    "name": "neclimdul",
+                    "homepage": "https://www.drupal.org/user/48673"
+                },
+                {
+                    "name": "sdboyer",
+                    "homepage": "https://www.drupal.org/user/146719"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
+            "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
+            "homepage": "https://www.drupal.org/project/ctools",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ctools",
+                "issues": "https://www.drupal.org/project/issues/ctools"
+            },
+            "install-path": "../../web/modules/contrib/ctools"
+        },
+        {
+            "name": "drupal/editor_advanced_link",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/editor_advanced_link.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/editor_advanced_link-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "db9469ffc073ab0b350296c86069441882ba2147"
+            },
+            "require": {
+                "drupal/core": "^9.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1624528083",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DuaelFr",
+                    "homepage": "https://www.drupal.org/user/931394"
+                }
+            ],
+            "description": "Add title, target etc. attributes to Text Editor's link dialog if the text format allows them.",
+            "homepage": "https://www.drupal.org/project/editor_advanced_link",
+            "support": {
+                "source": "https://git.drupalcode.org/project/editor_advanced_link"
+            },
+            "install-path": "../../web/modules/contrib/editor_advanced_link"
+        },
+        {
+            "name": "drupal/editor_file",
+            "version": "1.6.0",
+            "version_normalized": "1.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/editor_file.git",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/editor_file-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "700c06c2aca00293f338ecb90e683a2636ecb12a"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1633609246",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DuaelFr",
+                    "homepage": "https://www.drupal.org/user/931394"
+                }
+            ],
+            "description": "Allow users to link uploaded files in the text Editor.",
+            "homepage": "https://www.drupal.org/project/editor_file",
+            "support": {
+                "source": "https://git.drupalcode.org/project/editor_file"
+            },
+            "install-path": "../../web/modules/contrib/editor_file"
+        },
+        {
+            "name": "drupal/entity_reference_revisions",
+            "version": "1.9.0",
+            "version_normalized": "1.9.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_reference_revisions.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "e1c51bdea495eb3b458130d6f0a00c347f5637df"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "require-dev": {
+                "drupal/diff": "1.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1614805871",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Frans",
+                    "homepage": "https://www.drupal.org/user/514222"
+                },
+                {
+                    "name": "jeroen.b",
+                    "homepage": "https://www.drupal.org/user/1853532"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                }
+            ],
+            "description": "Entity Reference Revisions",
+            "homepage": "https://www.drupal.org/project/entity_reference_revisions",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_reference_revisions"
+            },
+            "install-path": "../../web/modules/contrib/entity_reference_revisions"
+        },
+        {
+            "name": "drupal/field_group",
+            "version": "3.2.0",
+            "version_normalized": "3.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_group.git",
+                "reference": "8.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "2020bbfe40f6ba43bc733ae7c8761632572433a0"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/jquery_ui_accordion": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.2",
+                    "datestamp": "1628513585",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Hydra",
+                    "homepage": "https://www.drupal.org/user/647364"
+                },
+                {
+                    "name": "Stalski",
+                    "homepage": "https://www.drupal.org/user/322618"
+                },
+                {
+                    "name": "jyve",
+                    "homepage": "https://www.drupal.org/user/591438"
+                },
+                {
+                    "name": "nils.destoop",
+                    "homepage": "https://www.drupal.org/user/361625"
+                },
+                {
+                    "name": "swentel",
+                    "homepage": "https://www.drupal.org/user/107403"
+                }
+            ],
+            "description": "Provides the field_group module.",
+            "homepage": "https://www.drupal.org/project/field_group",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_group",
+                "issues": "https://www.drupal.org/project/issues/field_group"
+            },
+            "install-path": "../../web/modules/contrib/field_group"
+        },
+        {
+            "name": "drupal/file_mdm",
+            "version": "2.4.0",
+            "version_normalized": "2.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/file_mdm.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/file_mdm-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "f0611a95417d35e98b7792dfffb569afe8bd6e7c"
+            },
+            "require": {
+                "drupal/core": "^9.2",
+                "lsolesen/pel": "^0.9.12",
+                "phenx/php-font-lib": "^0.5.4"
+            },
+            "require-dev": {
+                "drupal/image_effects": "*",
+                "drupal/vendor_stream_wrapper": "^2",
+                "fileeye/linuxlibertine-fonts": "^5.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1645440700",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mondrake",
+                    "homepage": "https://www.drupal.org/user/1307444"
+                }
+            ],
+            "description": "Provides a service to manage file metadata.",
+            "homepage": "https://www.drupal.org/project/file_mdm",
+            "support": {
+                "source": "https://git.drupalcode.org/project/file_mdm"
+            },
+            "install-path": "../../web/modules/contrib/file_mdm"
+        },
+        {
+            "name": "drupal/file_mdm_exif",
+            "version": "2.4.0",
+            "version_normalized": "2.4.0.0",
+            "require": {
+                "drupal/core": "^9.2",
+                "drupal/file_mdm": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1645440700",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mondrake",
+                    "homepage": "https://www.drupal.org/user/1307444"
+                }
+            ],
+            "description": "Provides a file metadata plugin for EXIF image information.",
+            "homepage": "https://www.drupal.org/project/file_mdm",
+            "support": {
+                "source": "https://git.drupalcode.org/project/file_mdm"
+            },
+            "install-path": null
+        },
+        {
+            "name": "drupal/file_mdm_font",
+            "version": "2.4.0",
+            "version_normalized": "2.4.0.0",
+            "require": {
+                "drupal/core": "^9.2",
+                "drupal/file_mdm": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1645440700",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mondrake",
+                    "homepage": "https://www.drupal.org/user/1307444"
+                }
+            ],
+            "description": "Provides a file metadata plugin for TTF/OTF/WOFF font information.",
+            "homepage": "https://www.drupal.org/project/file_mdm",
+            "support": {
+                "source": "https://git.drupalcode.org/project/file_mdm"
+            },
+            "install-path": null
+        },
+        {
+            "name": "drupal/hierarchical_taxonomy_menu",
+            "version": "1.42.0",
+            "version_normalized": "1.42.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/hierarchical_taxonomy_menu.git",
+                "reference": "8.x-1.42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/hierarchical_taxonomy_menu-8.x-1.42.zip",
+                "reference": "8.x-1.42",
+                "shasum": "5870803d3bd20370a6436e4ae346a09fe24ba974"
+            },
+            "require": {
+                "drupal/core": "^8.6 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.42",
+                    "datestamp": "1605088405",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Goran Nikolovski",
+                    "homepage": "https://gorannikolovski.com",
+                    "email": "goran@gorannikolovski.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create menus from taxonomy terms.",
+            "homepage": "https://www.drupal.org/project/hierarchical_taxonomy_menu",
+            "support": {
+                "source": "https://git.drupalcode.org/project/hierarchical_taxonomy_menu",
+                "issues": "https://www.drupal.org/project/issues/hierarchical_taxonomy_menu",
+                "email": "goran@gorannikolovski.com"
+            },
+            "install-path": "../../web/modules/contrib/hierarchical_taxonomy_menu"
+        },
+        {
+            "name": "drupal/image_effects",
+            "version": "3.2.0",
+            "version_normalized": "3.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/image_effects.git",
+                "reference": "8.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/image_effects-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "c45e2b9493758183813aac3807a16be5872f0caa"
+            },
+            "require": {
+                "drupal/core": "^9.2",
+                "drupal/file_mdm_exif": "^2.2",
+                "drupal/file_mdm_font": "^2.2"
+            },
+            "conflict": {
+                "drupal/imagemagick": "<3",
+                "drupal/jquery_colorpicker": "<2"
+            },
+            "require-dev": {
+                "drupal/imagemagick": "^3.3",
+                "drupal/jquery_colorpicker": "^2",
+                "drupal/vendor_stream_wrapper": "^1 | ^2",
+                "fileeye/linuxlibertine-fonts": "^5.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.2",
+                    "datestamp": "1639923532",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mondrake",
+                    "homepage": "https://www.drupal.org/user/1307444"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                }
+            ],
+            "description": "Provides effects and operations for the Image API.",
+            "homepage": "https://www.drupal.org/project/image_effects",
+            "support": {
+                "source": "https://git.drupalcode.org/project/image_effects"
+            },
+            "install-path": "../../web/modules/contrib/image_effects"
+        },
+        {
+            "name": "drupal/inline_entity_form",
+            "version": "1.0.0-rc11",
+            "version_normalized": "1.0.0.0-RC11",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/inline_entity_form.git",
+                "reference": "8.x-1.0-rc11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc11.zip",
+                "reference": "8.x-1.0-rc11",
+                "shasum": "67a92ec1482be19b2f2091ca9498f585e34072b9"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "drupal/entity_reference_revisions": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc11",
+                    "datestamp": "1648748863",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "kaythay",
+                    "homepage": "https://www.drupal.org/user/2182186"
+                },
+                {
+                    "name": "oknate",
+                    "homepage": "https://www.drupal.org/user/471638"
+                },
+                {
+                    "name": "ram4nd",
+                    "homepage": "https://www.drupal.org/user/601534"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "webflo",
+                    "homepage": "https://www.drupal.org/user/254778"
+                }
+            ],
+            "description": "Provides a widget for inline management (creation, modification, removal) of referenced entities.",
+            "homepage": "https://www.drupal.org/project/inline_entity_form",
+            "support": {
+                "source": "https://git.drupalcode.org/project/inline_entity_form"
+            },
+            "install-path": "../../web/modules/contrib/inline_entity_form"
+        },
+        {
+            "name": "drupal/jquery_ui",
+            "version": "1.4.0",
+            "version_normalized": "1.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "64c19ecc8902e2b4b1ab0cc5f5fe28dbc83bfebe"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1582149957",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "jjeff",
+                    "homepage": "https://www.drupal.org/user/17190"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "litwol",
+                    "homepage": "https://www.drupal.org/user/78134"
+                },
+                {
+                    "name": "mfb",
+                    "homepage": "https://www.drupal.org/user/12302"
+                },
+                {
+                    "name": "mfer",
+                    "homepage": "https://www.drupal.org/user/25701"
+                },
+                {
+                    "name": "mikelutz",
+                    "homepage": "https://www.drupal.org/user/2972409"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "webchick",
+                    "homepage": "https://www.drupal.org/user/24967"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui"
+            },
+            "install-path": "../../web/modules/contrib/jquery_ui"
+        },
+        {
+            "name": "drupal/jquery_ui_slider",
+            "version": "1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui_slider.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_slider-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "79b90cf60d45fc33ffdaa84bb2d6563f78a7d3d1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/jquery_ui": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1584107817",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI Slider library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui_slider",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui_slider"
+            },
+            "install-path": "../../web/modules/contrib/jquery_ui_slider"
+        },
+        {
+            "name": "drupal/jquery_ui_tooltip",
+            "version": "1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui_tooltip.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_tooltip-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "5a1d79d27c61a4cc80c1b256154aecfd0079d88c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/jquery_ui": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1584107978",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI Tooltip library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui_tooltip",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui_tooltip"
+            },
+            "install-path": "../../web/modules/contrib/jquery_ui_tooltip"
+        },
+        {
+            "name": "drupal/layoutcomponents",
+            "version": "3.0.1",
+            "version_normalized": "3.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layoutcomponents.git",
+                "reference": "3.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layoutcomponents-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "f4f31d0a0822a8d1b3258c2600242f16a4f8bc52"
+            },
+            "require": {
+                "cweagans/composer-patches": "^1.6",
+                "drupal/block_form_alter": "*",
+                "drupal/color_field": "*",
+                "drupal/colorbutton": "*",
+                "drupal/core": "^8.8 || ^9",
+                "drupal/ctools": "*",
+                "drupal/entity_reference_revisions": "^1.7",
+                "drupal/field_group": "*",
+                "drupal/inline_entity_form": "*",
+                "drupal/jquery_ui_slider": "^1.1",
+                "drupal/jquery_ui_tooltip": "*",
+                "drupal/linked_field": "*",
+                "drupal/media_library_form_element": "^1.0",
+                "drupal/panelbutton": "*",
+                "drupal/video_embed_field": "*",
+                "drupal/viewsreference": "*",
+                "drupal/webform": "^6.0"
+            },
+            "require-dev": {
+                "drupal/lc_simple_text-lc_simple_text": "*",
+                "drupal/lc_simple_title-lc_simple_title": "*",
+                "drupal/lc_slick-lc_slick": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.1",
+                    "datestamp": "1627115748",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "patches": {
+                    "drupal/core": {
+                        "Reorder sections": "https://www.drupal.org/files/issues/2020-03-20/layout_builder_3080606-reorder-layout-sections-29_1.patch"
+                    },
+                    "drupal/inline_entity_form": {
+                        "Block form not saved": "https://www.drupal.org/files/issues/2020-03-04/fix-ief-layout-block-3117510-4.patch"
+                    }
+                },
+                "installer-paths": {
+                    "web/core": [
+                        "type:drupal-core"
+                    ],
+                    "web/libraries/{$name}": [
+                        "type:drupal-library"
+                    ],
+                    "web/modules/contrib/{$name}": [
+                        "type:drupal-module"
+                    ],
+                    "web/modules/custom/{$name}": [
+                        "type:drupal-custom-module"
+                    ],
+                    "web/profiles/contrib/{$name}": [
+                        "type:drupal-profile"
+                    ],
+                    "web/themes/contrib/{$name}": [
+                        "type:drupal-theme"
+                    ],
+                    "web/themes/custom/{$name}": [
+                        "type:drupal-theme-custom"
+                    ],
+                    "drush/Commands/{$name}": [
+                        "type:drupal-drush"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "David Biescas Gaspar",
+                    "homepage": "https://www.drupal.org/user/3377756",
+                    "email": "dcraig91@gmail.com",
+                    "role": "Backend developer"
+                },
+                {
+                    "name": "Jose Luis Lopez Martinez",
+                    "homepage": "https://www.drupal.org/user/3619999",
+                    "email": "joseluislopez07@gmail.com",
+                    "role": "Frontend developer"
+                },
+                {
+                    "name": "Roberto Valentino Da Costa Correa",
+                    "homepage": "https://www.drupal.org/user/3713773",
+                    "email": "tobascosta10@gmail.com",
+                    "role": "Backend developer"
+                },
+                {
+                    "name": "Alberto Perez Dosaula",
+                    "homepage": "https://www.drupal.org/user/3476843",
+                    "email": "email.albertoperez@gmail.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Fully extension of Layout Builder to implement grid, components, auto preview and a full customization of each field",
+            "homepage": "https://www.drupal.org/project/layoutcomponents",
+            "keywords": [
+                "Administration",
+                "Blocks",
+                "Components",
+                "Customization",
+                "Drupal",
+                "Layout Builder"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/layoutcomponents"
+            },
+            "install-path": "../../web/modules/contrib/layoutcomponents"
+        },
+        {
+            "name": "drupal/linked_field",
+            "version": "1.3.0",
+            "version_normalized": "1.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/linked_field.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/linked_field-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "0350c415eba6ff63d9fc8f3a162564dd4c2142e2"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1583855735",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hubdrop",
+                    "homepage": "https://www.drupal.org/user/2750597"
+                },
+                {
+                    "name": "yannickoo",
+                    "homepage": "https://www.drupal.org/user/531118"
+                }
+            ],
+            "description": "Adds the functionality to link fields to a specific destination.",
+            "homepage": "https://www.drupal.org/project/linked_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/linked_field"
+            },
+            "install-path": "../../web/modules/contrib/linked_field"
+        },
+        {
+            "name": "drupal/media_library_form_element",
+            "version": "1.3.0",
+            "version_normalized": "1.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_library_form_element.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_library_form_element-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "2811c306360c542a8b469935ac59c7d4b1ddffe9"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1608023001",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kim Kennof",
+                    "homepage": "https://www.drupal.org/u/nightlife2008",
+                    "email": "kim.kennof@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "AUSY, a randstad company",
+                    "homepage": "https://www.ausy.be",
+                    "email": "info@ausy.be",
+                    "role": "Sponsor"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                },
+                {
+                    "name": "nightlife2008",
+                    "homepage": "https://www.drupal.org/user/333515"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                }
+            ],
+            "description": "This module provides a Media Library Form API element to be used in all sorts of forms.",
+            "homepage": "https://www.drupal.org/project/media_library_form_element",
+            "keywords": [
+                "Drupal",
+                "Form API",
+                "Media",
+                "Media Library"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/media_library_form_element",
+                "issues": "https://www.drupal.org/project/issues/media_library_form_element"
+            },
+            "install-path": "../../web/modules/contrib/media_library_form_element"
+        },
+        {
+            "name": "drupal/panelbutton",
+            "version": "1.4.0",
+            "version_normalized": "1.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/panelbutton.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/panelbutton-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "9e4b83af312607242dde0e095e80fb68264208a1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1626792838",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "ddrozdik",
+                    "homepage": "https://www.drupal.org/user/574124"
+                },
+                {
+                    "name": "kevinquillen",
+                    "homepage": "https://www.drupal.org/user/317279"
+                }
+            ],
+            "description": "Adds the Panel Button plugin to CKEditor. This plugin is a utility plugin that is required by certain user-facing CKEditor plugins.",
+            "homepage": "http://drupal.org/project/panelbutton",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/panelbutton",
+                "issues": "http://drupal.org/project/issues/panelbutton"
+            },
+            "install-path": "../../web/modules/contrib/panelbutton"
+        },
+        {
+            "name": "drupal/taxonomy_menu",
+            "version": "3.5.0",
+            "version_normalized": "3.5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/taxonomy_menu.git",
+                "reference": "8.x-3.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_menu-8.x-3.5.zip",
+                "reference": "8.x-3.5",
+                "shasum": "249f11392ee222067732718fe73f951afc5a881f"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.5",
+                    "datestamp": "1631710782",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "DamienMcKenna",
+                    "homepage": "https://www.drupal.org/user/108450"
+                },
+                {
+                    "name": "NickDickinsonWilde",
+                    "homepage": "https://www.drupal.org/user/3094661"
+                },
+                {
+                    "name": "andrey.troeglazov",
+                    "homepage": "https://www.drupal.org/user/3145389"
+                },
+                {
+                    "name": "ashrafabed",
+                    "homepage": "https://www.drupal.org/user/1875528"
+                },
+                {
+                    "name": "bmack",
+                    "homepage": "https://www.drupal.org/user/3594520"
+                },
+                {
+                    "name": "dstol",
+                    "homepage": "https://www.drupal.org/user/329570"
+                },
+                {
+                    "name": "nerdstein",
+                    "homepage": "https://www.drupal.org/user/1557710"
+                },
+                {
+                    "name": "rwanth",
+                    "homepage": "https://www.drupal.org/user/3564319"
+                }
+            ],
+            "description": "Creates menu items based on associations to taxonomy vocabularies",
+            "homepage": "http://drupal.org/project/taxonomy_menu",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/taxonomy_menu",
+                "issues": "http://drupal.org/project/taxonomy_menu"
+            },
+            "install-path": "../../web/modules/contrib/taxonomy_menu"
+        },
+        {
+            "name": "drupal/taxonomy_unique",
+            "version": "2.3.0",
+            "version_normalized": "2.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/taxonomy_unique.git",
+                "reference": "8.x-2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_unique-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "550d06d5b9c670538b93e0aa31b43b4eb1a76f7e"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/coder": "^8.3.6",
+                "squizlabs/php_codesniffer": "^3.4.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.3",
+                    "datestamp": "1591087096",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "post-install-cmd": [
+                    "./vendor/bin/phpcs --config-set installed_paths ../../drupal/coder/coder_sniffer",
+                    "./vendor/bin/phpcs --config-set show_progress 1"
+                ],
+                "post-update-cmd": [
+                    "./vendor/bin/phpcs --config-set installed_paths ../../drupal/coder/coder_sniffer",
+                    "./vendor/bin/phpcs --config-set show_progress 1"
+                ],
+                "phpcs": [
+                    "./vendor/bin/phpcs --standard=Drupal,DrupalPractice ./ --ignore=./vendor"
+                ],
+                "phpcbf": [
+                    "./vendor/bin/phpcbf --standard=Drupal,DrupalPractice ./ --ignore=./vendor"
+                ]
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Schally",
+                    "homepage": "https://www.drupal.org/user/856550",
+                    "email": "rafael.schally@gmail.com"
+                }
+            ],
+            "description": "Checks for duplicate occurrences of term names.",
+            "homepage": "https://www.drupal.org/project/taxonomy_unique",
+            "keywords": [
+                "drupal",
+                "taxonomy",
+                "ui"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/taxonomy_unique"
+            },
+            "install-path": "../../web/modules/contrib/taxonomy_unique"
+        },
+        {
+            "name": "drupal/video_embed_field",
+            "version": "2.4.0",
+            "version_normalized": "2.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/video_embed_field.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "96b14bb93c1bb6a07b84315a4f87367870f8b574"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/colorbox": "^1.0",
+                "drupal/video_embed_media": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1587686337",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "jec006",
+                    "homepage": "https://www.drupal.org/user/855980"
+                },
+                {
+                    "name": "plopesc",
+                    "homepage": "https://www.drupal.org/user/282415"
+                }
+            ],
+            "description": "A pluggable field type for storing videos from external video hosts such as Vimeo and YouTube.",
+            "homepage": "https://www.drupal.org/project/video_embed_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/video_embed_field"
+            },
+            "install-path": "../../web/modules/contrib/video_embed_field"
+        },
+        {
+            "name": "drupal/viewsreference",
+            "version": "1.8.0",
+            "version_normalized": "1.8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/viewsreference.git",
+                "reference": "8.x-1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/viewsreference-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "8dd6b3828d40f4da413f73f956da528941e2ef52"
+            },
+            "require": {
+                "drupal/core": "^8.6|^9.0",
+                "php": "^7.0|^8.0",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "conflict": {
+                "drupal/viewsreferennce": "*"
+            },
+            "require-dev": {
+                "composer/installers": "^1.2",
+                "drupal/coder": "^8.2",
+                "drupal/core-composer-scaffold": "*",
+                "webflo/drupal-core-require-dev": "~8.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.8",
+                    "datestamp": "1652694596",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "installer-paths": {
+                    "../build/core": [
+                        "type:drupal-core"
+                    ],
+                    "../build/modules/contrib/{$name}": [
+                        "type:drupal-module"
+                    ],
+                    "../build/themes/contrib/{$name}": [
+                        "type:drupal-theme"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "New Zeal",
+                    "homepage": "https://www.drupal.org/user/93571"
+                },
+                {
+                    "name": "jasonawant",
+                    "homepage": "https://www.drupal.org/user/589890"
+                },
+                {
+                    "name": "joekers",
+                    "homepage": "https://www.drupal.org/user/2229066"
+                },
+                {
+                    "name": "seanB",
+                    "homepage": "https://www.drupal.org/user/545912"
+                }
+            ],
+            "description": "Views Reference",
+            "homepage": "http://drupal.org/project/viewsreference",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/viewsreference",
+                "issues": "http://drupal.org/project/issues/viewsreference"
+            },
+            "install-path": "../../web/modules/contrib/viewsreference"
+        },
+        {
+            "name": "drupal/webform",
+            "version": "6.1.3",
+            "version_normalized": "6.1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform.git",
+                "reference": "6.1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform-6.1.3.zip",
+                "reference": "6.1.3",
+                "shasum": "efd032eadc10a4752b9b0203152a5d20eefac175"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/address": "~1.0",
+                "drupal/bootstrap": "~3.0",
+                "drupal/captcha": "~1.0",
+                "drupal/chosen": "~3.0",
+                "drupal/clientside_validation": "~3.0",
+                "drupal/clientside_validation_jquery": "*",
+                "drupal/devel": "~3.0",
+                "drupal/entity": "~1.0",
+                "drupal/entity_print": "~2.0",
+                "drupal/gnode": "*",
+                "drupal/group": "1.0",
+                "drupal/jquery_ui": "~1.0",
+                "drupal/jquery_ui_checkboxradio": "~1.0",
+                "drupal/jquery_ui_datepicker": "~1.0",
+                "drupal/lingotek": "~3.0",
+                "drupal/mailsystem": "~4.0",
+                "drupal/paragraphs": "~1.0",
+                "drupal/select2": "~1.0",
+                "drupal/smtp": "~1.0",
+                "drupal/styleguide": "~1.0",
+                "drupal/telephone_validation": "~2.0",
+                "drupal/token": "~1.0",
+                "drupal/variationcache": "~1.0",
+                "drupal/webform_access": "*",
+                "drupal/webform_attachment": "*",
+                "drupal/webform_clientside_validation": "*",
+                "drupal/webform_devel": "*",
+                "drupal/webform_entity_print": "*",
+                "drupal/webform_group": "*",
+                "drupal/webform_node": "*",
+                "drupal/webform_options_limit": "*",
+                "drupal/webform_scheduled_email": "*",
+                "drupal/webform_share": "*",
+                "drupal/webform_ui": "*"
+            },
+            "suggest": {
+                "drupal/jquery_ui_checkboxradio": "Provides jQuery UI Checkboxradio library. Required by the Webform jQueryUI Buttons module. The Webform jQueryUI Buttons module is deprecated because jQueryUI is no longer maintained.",
+                "drupal/jquery_ui_datepicker": "Provides jQuery UI Datepicker library. Required to support datepickers. The Webform jQueryUI Datepicker module is deprecated because jQueryUI is no longer maintained."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "6.1.3",
+                    "datestamp": "1644940723",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Rockowitz (jrockowitz)",
+                    "homepage": "https://www.drupal.org/u/jrockowitz",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Alexander Trotsenko (bucefal91)",
+                    "homepage": "https://www.drupal.org/u/bucefal91",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/7404/committers",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
+            "description": "Enables the creation of webforms and questionnaires.",
+            "homepage": "https://drupal.org/project/webform",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform",
+                "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
+                "docs": "https://www.drupal.org/docs/8/modules/webform",
+                "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
+            },
+            "install-path": "../../web/modules/contrib/webform"
         },
         {
             "name": "drush/drush",
@@ -2630,6 +4495,69 @@
             "install-path": "../league/container"
         },
         {
+            "name": "lsolesen/pel",
+            "version": "0.9.12",
+            "version_normalized": "0.9.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pel/pel.git",
+                "reference": "b95fe29cdacf9d36330da277f10910a13648c84c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pel/pel/zipball/b95fe29cdacf9d36330da277f10910a13648c84c",
+                "reference": "b95fe29cdacf9d36330da277f10910a13648c84c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "ext-exif": "*",
+                "ext-gd": "*",
+                "php-coveralls/php-coveralls": ">2.4",
+                "squizlabs/php_codesniffer": ">3.5",
+                "symfony/phpunit-bridge": "^4 || ^5"
+            },
+            "time": "2022-02-18T13:20:54+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "lsolesen\\pel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Olesen",
+                    "email": "lars@intraface.dk",
+                    "homepage": "http://intraface.dk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Martin Geisler",
+                    "email": "martin@geisler.net",
+                    "homepage": "http://geisler.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Exif Library. A library for reading and writing Exif headers in JPEG and TIFF images using PHP.",
+            "homepage": "http://pel.github.com/pel/",
+            "keywords": [
+                "exif",
+                "image"
+            ],
+            "support": {
+                "issues": "https://github.com/pel/pel/issues",
+                "source": "https://github.com/pel/pel/tree/0.9.12"
+            },
+            "install-path": "../lsolesen/pel"
+        },
+        {
             "name": "masterminds/html5",
             "version": "2.7.5",
             "version_normalized": "2.7.5.0",
@@ -2989,6 +4917,53 @@
                 "exception"
             ],
             "install-path": "../pear/pear_exception"
+        },
+        {
+            "name": "phenx/php-font-lib",
+            "version": "0.5.4",
+            "version_normalized": "0.5.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/php-font-lib.git",
+                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/dd448ad1ce34c63d09baccd05415e361300c35b4",
+                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^3 || ^4 || ^5"
+            },
+            "time": "2021-12-17T19:44:54+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "FontLib\\": "src/FontLib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                }
+            ],
+            "description": "A library to read, parse, export and make subsets of different types of font files.",
+            "homepage": "https://github.com/PhenX/php-font-lib",
+            "support": {
+                "issues": "https://github.com/dompdf/php-font-lib/issues",
+                "source": "https://github.com/dompdf/php-font-lib/tree/0.5.4"
+            },
+            "install-path": "../phenx/php-font-lib"
         },
         {
             "name": "psr/cache",
@@ -3365,6 +5340,65 @@
             ],
             "description": "A polyfill for getallheaders.",
             "install-path": "../ralouphie/getallheaders"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "3.6.2",
+            "version_normalized": "3.6.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "5e4e71592f69da17871dba6e80dd51bce74a351a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/5e4e71592f69da17871dba6e80dd51bce74a351a",
+                "reference": "5e4e71592f69da17871dba6e80dd51bce74a351a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "time": "2021-12-12T21:44:58+00:00",
+            "bin": [
+                "bin/phpcs",
+                "bin/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "support": {
+                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
+                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
+                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
+            },
+            "install-path": "../squizlabs/php_codesniffer"
         },
         {
             "name": "stack/builder",
