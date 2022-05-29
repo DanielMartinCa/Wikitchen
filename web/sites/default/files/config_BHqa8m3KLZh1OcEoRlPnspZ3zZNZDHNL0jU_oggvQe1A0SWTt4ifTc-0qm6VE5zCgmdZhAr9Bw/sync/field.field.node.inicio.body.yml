@@ -1,0 +1,23 @@
+uuid: 4aed1f5d-c343-4cb6-aec5-1f596fa4c62a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.inicio
+  module:
+    - text
+id: node.inicio.body
+field_name: body
+entity_type: node
+bundle: inicio
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

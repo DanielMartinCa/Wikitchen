@@ -1,0 +1,25 @@
+uuid: 8990e652-13a4-4fcc-8b6e-4bb927fe602d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:simple_image:a2e61b21-b45c-4833-9c9d-300efe6f713c'
+  module:
+    - block_content
+  theme:
+    - bootstrap4
+id: header_2
+theme: bootstrap4
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:a2e61b21-b45c-4833-9c9d-300efe6f713c'
+settings:
+  id: 'block_content:a2e61b21-b45c-4833-9c9d-300efe6f713c'
+  label: header
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

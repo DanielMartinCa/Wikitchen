@@ -60,6 +60,7 @@ module:
   path: 0
   path_alias: 0
   rdf: 0
+  responsive_image: 0
   search: 0
   serialization: 0
   shortcut: 0

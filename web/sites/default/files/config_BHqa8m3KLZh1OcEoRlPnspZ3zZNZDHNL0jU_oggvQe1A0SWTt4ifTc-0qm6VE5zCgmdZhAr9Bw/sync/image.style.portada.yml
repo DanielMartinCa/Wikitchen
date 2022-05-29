@@ -1,0 +1,19 @@
+uuid: 0f0d653d-b9e0-4279-b913-0f2e393ad959
+langcode: es
+status: true
+dependencies:
+  module:
+    - image_effects
+name: portada
+label: portada
+effects:
+  71f6f323-a04e-4f74-852b-c1cf263126a6:
+    uuid: 71f6f323-a04e-4f74-852b-c1cf263126a6
+    id: image_effects_scale_and_smart_crop
+    weight: 1
+    data:
+      width: 100%
+      height: '200'
+      upscale: false
+      simulate: false
+      algorithm: entropy_slice
