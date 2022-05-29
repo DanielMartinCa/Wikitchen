@@ -5,11 +5,17 @@ dependencies:
   config:
     - field.field.node.contenido_prueba.body
     - field.field.node.contenido_prueba.field_image
+    - field.field.node.contenido_prueba.layout_builder__layout
     - node.type.contenido_prueba
   module:
     - image
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
 id: node.contenido_prueba.default
 targetEntityType: node
 bundle: contenido_prueba
@@ -38,3 +44,4 @@ content:
     region: content
 hidden:
   langcode: true
+  layout_builder__layout: true

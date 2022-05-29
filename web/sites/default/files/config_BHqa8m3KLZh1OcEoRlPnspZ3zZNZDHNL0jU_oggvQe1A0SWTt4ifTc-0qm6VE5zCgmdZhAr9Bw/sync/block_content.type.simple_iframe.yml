@@ -1,0 +1,10 @@
+uuid: b445e871-2940-4251-ac00-9c935886f906
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yGZHbV_vKl8Z6eQeR_LnqLA05JgDUeMZBQVJzu-28HQ
+id: simple_iframe
+label: Iframe
+revision: 1
+description: ''

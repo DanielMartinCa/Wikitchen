@@ -1,0 +1,27 @@
+uuid: 749817db-7fce-4e49-84a3-0a4f1a1e74c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.landing.body
+    - field.field.node.landing.field_image
+    - field.field.node.landing.layout_builder__layout
+    - node.type.landing
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.landing.default
+targetEntityType: node
+bundle: landing
+mode: default
+content: {  }
+hidden:
+  body: true
+  field_image: true
+  langcode: true
+  layout_builder__layout: true
+  links: true

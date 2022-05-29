@@ -1,0 +1,98 @@
+uuid: 9c85deec-2992-43fd-b8ef-862899586be7
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.contenido_prueba.body
+    - field.field.node.contenido_prueba.field_image
+    - field.field.node.contenido_prueba.layout_builder__layout
+    - node.type.contenido_prueba
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f650d37c-364c-491e-8f5c-31b3f87f0c88:
+            uuid: f650d37c-364c-491e-8f5c-31b3f87f0c88
+            region: content
+            configuration:
+              id: 'extra_field_block:node:contenido_prueba:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          1ab5e11c-f021-478c-9d42-a955453e1c06:
+            uuid: 1ab5e11c-f021-478c-9d42-a955453e1c06
+            region: content
+            configuration:
+              id: 'field_block:node:contenido_prueba:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4b325c9b-8435-48ee-9161-5a45c6b162b6:
+            uuid: 4b325c9b-8435-48ee-9161-5a45c6b162b6
+            region: content
+            configuration:
+              id: 'field_block:node:contenido_prueba:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.contenido_prueba.full
+targetEntityType: node
+bundle: contenido_prueba
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

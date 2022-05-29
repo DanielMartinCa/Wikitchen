@@ -1,0 +1,38 @@
+uuid: 33ee7c8f-36ee-4ad3-a2ef-326da9eee9c1
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+_core:
+  default_config_hash: 3edaFGtnJW5qyVbFU-lsoICjQbMmpI9NUn3Qk8398Xo
+id: block_content.field_si_image_display
+field_name: field_si_image_display
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: large
+      label: 'Large (480×480)'
+    -
+      value: media_library
+      label: 'Media Library thumbnail (220×220)'
+    -
+      value: medium
+      label: 'Medium (220×220)'
+    -
+      value: thumbnail
+      label: 'Thumbnail (100×100)'
+    -
+      value: wide
+      label: 'Wide (1090)'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

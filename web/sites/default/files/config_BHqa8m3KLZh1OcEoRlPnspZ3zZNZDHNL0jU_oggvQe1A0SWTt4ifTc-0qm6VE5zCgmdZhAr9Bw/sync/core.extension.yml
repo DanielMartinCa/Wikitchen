@@ -2,6 +2,7 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 langcode: es
 module:
+  admin_toolbar: 0
   allowed_formats: 0
   automated_cron: 0
   big_pipe: 0
@@ -32,6 +33,7 @@ module:
   file_mdm_exif: 0
   file_mdm_font: 0
   filter: 0
+  hal: 0
   help: 0
   hierarchical_taxonomy_menu: 0
   history: 0
@@ -44,7 +46,6 @@ module:
   language: 0
   layout_builder: 0
   layout_discovery: 0
-  layoutcomponents: 0
   link: 0
   locale: 0
   media: 0
@@ -59,6 +60,7 @@ module:
   path_alias: 0
   rdf: 0
   search: 0
+  serialization: 0
   shortcut: 0
   sliderwidget: 0
   system: 0
@@ -66,16 +68,21 @@ module:
   taxonomy_menu: 0
   taxonomy_unique: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
   user: 0
   video_embed_field: 0
   views_ui: 0
+  pathauto: 1
   views: 10
   linked_field: 100
   standard: 1000
 theme:
   bartik: 0
   seven: 0
+  stable: 0
+  classy: 0
+  bootstrap4: 0
 profile: standard

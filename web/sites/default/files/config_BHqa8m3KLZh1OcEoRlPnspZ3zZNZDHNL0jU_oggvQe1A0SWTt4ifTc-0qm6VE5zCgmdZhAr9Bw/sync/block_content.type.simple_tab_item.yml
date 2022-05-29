@@ -1,0 +1,10 @@
+uuid: eb75eadf-0139-44ac-b20f-383ff37a50e4
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: fk2a0T887AJayjFDopX49-NOSUulHXMeCbuIzS8cSJo
+id: simple_tab_item
+label: 'Tab Item'
+revision: 1
+description: ''

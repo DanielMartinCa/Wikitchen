@@ -1,0 +1,8 @@
+uuid: 0f386c64-1ec5-4494-b98b-9acabaf67f13
+langcode: es
+status: true
+dependencies: {  }
+name: Ingredientes
+vid: ingredientes
+description: 'Ingredientes de las recetas'
+weight: 0

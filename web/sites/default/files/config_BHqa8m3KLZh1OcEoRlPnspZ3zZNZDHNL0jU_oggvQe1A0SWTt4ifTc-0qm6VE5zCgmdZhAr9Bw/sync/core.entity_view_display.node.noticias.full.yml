@@ -1,0 +1,98 @@
+uuid: 04054f69-f146-4fb4-9bf1-dfe1ee2d254b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.noticias.body
+    - field.field.node.noticias.field_image
+    - field.field.node.noticias.layout_builder__layout
+    - node.type.noticias
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          39b8028c-ac11-41b2-aa55-3360fab53e91:
+            uuid: 39b8028c-ac11-41b2-aa55-3360fab53e91
+            region: content
+            configuration:
+              id: 'extra_field_block:node:noticias:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          225d0527-7f26-4a3b-aaf8-708fdde98be1:
+            uuid: 225d0527-7f26-4a3b-aaf8-708fdde98be1
+            region: content
+            configuration:
+              id: 'field_block:node:noticias:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          ee1854b6-d4c5-41da-a28d-5a3509e6a7bf:
+            uuid: ee1854b6-d4c5-41da-a28d-5a3509e6a7bf
+            region: content
+            configuration:
+              id: 'field_block:node:noticias:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.noticias.full
+targetEntityType: node
+bundle: noticias
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

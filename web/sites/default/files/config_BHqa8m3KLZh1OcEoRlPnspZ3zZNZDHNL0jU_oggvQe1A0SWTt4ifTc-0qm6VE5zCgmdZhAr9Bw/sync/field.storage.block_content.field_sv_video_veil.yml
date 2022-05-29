@@ -1,0 +1,20 @@
+uuid: 47e69b4f-1067-433a-9857-0343aa278164
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: tzWeSvG25qzfWYKDEhBBw892hxXubTkNFb8iTR6fGc4
+id: block_content.field_sv_video_veil
+field_name: field_sv_video_veil
+entity_type: block_content
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: f6206a6a-b9d8-4cbe-9dd9-1e566b50a784
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: mPMNIOTO-gjbxJa8_rz2WdcnH2tbeCc1gnb0ygJOluE
+id: block_content.field_sv_video_extra_class
+field_name: field_sv_video_extra_class
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

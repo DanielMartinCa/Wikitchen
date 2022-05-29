@@ -1,0 +1,8 @@
+uuid: 45f104c4-2d6e-4c28-b44f-13d8fd69db4a
+langcode: es
+status: true
+dependencies: {  }
+name: Dificultad
+vid: dificultad
+description: 'Dificultad de realización de las recetas'
+weight: 0

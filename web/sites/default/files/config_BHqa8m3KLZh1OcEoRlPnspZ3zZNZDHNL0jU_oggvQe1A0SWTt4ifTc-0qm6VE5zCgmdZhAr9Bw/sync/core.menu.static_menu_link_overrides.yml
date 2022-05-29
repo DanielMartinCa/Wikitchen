@@ -8,3 +8,15 @@ definitions:
     weight: 0
     expanded: false
     enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__ingredientes__1':
+    enabled: false
+    menu_name: account
+    parent: ''
+    expanded: false
+    weight: 0
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__ingredientes__2':
+    enabled: false
+    menu_name: account
+    parent: ''
+    weight: 0
+    expanded: false

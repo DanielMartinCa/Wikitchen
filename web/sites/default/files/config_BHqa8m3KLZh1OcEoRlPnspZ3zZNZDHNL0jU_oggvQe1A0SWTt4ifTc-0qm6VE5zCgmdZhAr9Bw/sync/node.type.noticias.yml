@@ -1,0 +1,17 @@
+uuid: 3622a96d-93a9-4b81-8d22-40037f248b2a
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Noticias
+type: noticias
+description: 'Páginas para noticias relacionadas con el mundo de la gastronomía.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

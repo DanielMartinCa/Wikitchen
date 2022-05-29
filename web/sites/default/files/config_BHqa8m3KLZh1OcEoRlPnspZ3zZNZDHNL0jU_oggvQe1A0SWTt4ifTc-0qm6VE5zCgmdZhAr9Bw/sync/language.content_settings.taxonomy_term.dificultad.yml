@@ -1,0 +1,11 @@
+uuid: 3ab2d5ee-e329-42c3-92bd-1c0621d23abd
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dificultad
+id: taxonomy_term.dificultad
+target_entity_type_id: taxonomy_term
+target_bundle: dificultad
+default_langcode: site_default
+language_alterable: false
