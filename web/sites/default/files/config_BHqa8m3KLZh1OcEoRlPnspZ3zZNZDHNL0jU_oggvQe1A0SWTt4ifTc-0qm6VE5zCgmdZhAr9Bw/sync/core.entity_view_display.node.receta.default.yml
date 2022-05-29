@@ -1,0 +1,302 @@
+uuid: 2c2149bb-f855-4bf2-9101-241777940287
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.receta.body
+    - field.field.node.receta.comment
+    - field.field.node.receta.field_dificultad
+    - field.field.node.receta.field_entrada
+    - field.field.node.receta.field_image
+    - field.field.node.receta.field_ingredientes
+    - field.field.node.receta.layout_builder__layout
+    - node.type.receta
+    - views.view.recetas_relacionadas
+  module:
+    - comment
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: entrada
+          context_mapping: {  }
+        components:
+          67ce0497-edd2-456b-a921-e44c877b01ed:
+            uuid: 67ce0497-edd2-456b-a921-e44c877b01ed
+            region: content
+            configuration:
+              id: 'field_block:node:receta:field_entrada'
+              label: entrada
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: imagen
+          context_mapping: {  }
+          column_widths: 67-33
+        components:
+          11a3a54f-24ed-440d-827c-fa595c7212c1:
+            uuid: 11a3a54f-24ed-440d-827c-fa595c7212c1
+            region: first
+            configuration:
+              id: 'field_block:node:receta:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: max_650x650
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: Array
+                      custom: Array
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+            weight: 0
+            additional: {  }
+          7f90e3d9-26b2-43c7-8f97-693dc4729dc2:
+            uuid: 7f90e3d9-26b2-43c7-8f97-693dc4729dc2
+            region: second
+            configuration:
+              id: 'field_block:node:receta:field_ingredientes'
+              label: Ingredientes
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: body
+          context_mapping: {  }
+        components:
+          956d7520-5763-4ff2-b9eb-516524ec3b35:
+            uuid: 956d7520-5763-4ff2-b9eb-516524ec3b35
+            region: content
+            configuration:
+              id: 'field_block:node:receta:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+            weight: 0
+            additional: {  }
+          d804471e-5b9e-4666-858b-869a313cd533:
+            uuid: d804471e-5b9e-4666-858b-869a313cd533
+            region: content
+            configuration:
+              id: 'views_block:recetas_relacionadas-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: comentarios
+          context_mapping: {  }
+        components:
+          535d60e3-935f-486b-9064-a4b569bf3d59:
+            uuid: 535d60e3-935f-486b-9064-a4b569bf3d59
+            region: content
+            configuration:
+              id: 'field_block:node:receta:comment'
+              label: Comentarios
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: comment_default
+                label: above
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.receta.default
+targetEntityType: node
+bundle: receta
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  comment:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_dificultad:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_entrada:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_ingredientes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  links: true

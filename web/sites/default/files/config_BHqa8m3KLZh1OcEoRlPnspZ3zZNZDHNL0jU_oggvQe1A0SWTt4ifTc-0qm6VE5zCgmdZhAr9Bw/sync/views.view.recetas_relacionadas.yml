@@ -1,16 +1,16 @@
-uuid: 6fae6a76-314b-4c85-9ab9-610c0a304859
+uuid: 9bdb405e-fac0-4429-97f7-a6631d8a37b5
 langcode: es
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.noticias
-    - taxonomy.vocabulary.tags
+    - node.type.receta
+    - taxonomy.vocabulary.ingredientes
   module:
     - node
     - user
-id: noticias_relacionadas
-label: 'noticias relacionadas'
+id: recetas_relacionadas
+label: 'Recetas relacionadas'
 module: views
 description: ''
 tag: ''
@@ -23,7 +23,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Otras noticias'
+      title: 'Recetas relacionadas'
       fields:
         title:
           id: title
@@ -32,35 +32,19 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
           plugin_id: field
           label: ''
           exclude: false
           alter:
             alter_text: false
-            text: ''
             make_link: false
-            path: ''
             absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            word_boundary: false
+            ellipsis: false
             strip_tags: false
             trim: false
-            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
@@ -181,10 +165,10 @@ display:
           validate_options: {  }
           break_phrase: false
           not: true
-        field_etiquetas_target_id:
-          id: field_etiquetas_target_id
-          table: node__field_etiquetas
-          field: field_etiquetas_target_id
+        field_ingredientes_target_id:
+          id: field_ingredientes_target_id
+          table: node__field_ingredientes
+          field: field_ingredientes_target_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -202,7 +186,7 @@ display:
             node: true
             limit: true
             vids:
-              tags: tags
+              ingredientes: ingredientes
             anyall: +
           default_argument_skip_url: false
           summary_options:
@@ -243,7 +227,7 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            noticias: noticias
+            receta: receta
           group: 1
           expose:
             operator_limit_selection: false
@@ -254,10 +238,13 @@ display:
           1: AND
       style:
         type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
         type: 'entity:node'
         options:
-          relationship: none
           view_mode: teaser
       query:
         type: views_query

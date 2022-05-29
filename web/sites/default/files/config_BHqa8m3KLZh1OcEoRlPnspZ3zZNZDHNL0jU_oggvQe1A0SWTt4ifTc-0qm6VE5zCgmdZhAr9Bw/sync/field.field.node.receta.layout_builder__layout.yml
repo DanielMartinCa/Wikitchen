@@ -1,16 +1,16 @@
-uuid: 05542736-0dd7-4711-afaa-ec417d3fe0f9
+uuid: 3bca4706-dff7-4b2b-9e63-e869b21b7d25
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.layout_builder__layout
-    - node.type.noticias
+    - node.type.receta
   module:
     - layout_builder
-id: node.noticias.layout_builder__layout
+id: node.receta.layout_builder__layout
 field_name: layout_builder__layout
 entity_type: node
-bundle: noticias
+bundle: receta
 label: Layout
 description: ''
 required: false

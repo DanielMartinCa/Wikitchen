@@ -27,8 +27,8 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          da355679-2bb0-4ca7-aafc-80aefcad971d:
-            uuid: da355679-2bb0-4ca7-aafc-80aefcad971d
+          7d4b38a9-4127-4781-a139-9b38aa19c2c5:
+            uuid: 7d4b38a9-4127-4781-a139-9b38aa19c2c5
             region: content
             configuration:
               id: 'field_block:node:noticias:field_entrada'
@@ -42,8 +42,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          81f4be6f-be4f-4e7e-92f9-8f6677241de9:
-            uuid: 81f4be6f-be4f-4e7e-92f9-8f6677241de9
+          aadf0a1d-9272-4d15-bc08-98fa36deecb5:
+            uuid: aadf0a1d-9272-4d15-bc08-98fa36deecb5
             region: content
             configuration:
               id: 'field_block:node:noticias:field_image'
@@ -59,8 +59,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-          e811dcdf-6b89-4608-839f-18c951d66fd7:
-            uuid: e811dcdf-6b89-4608-839f-18c951d66fd7
+          3338dd61-c7af-4f6e-8ab1-feafbd251c86:
+            uuid: 3338dd61-c7af-4f6e-8ab1-feafbd251c86
             region: content
             configuration:
               id: 'field_block:node:noticias:body'
@@ -74,8 +74,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          f533e1a2-228d-4802-966c-6fe567ad2f57:
-            uuid: f533e1a2-228d-4802-966c-6fe567ad2f57
+          a2b7032e-75b5-4f5d-98a0-bc413210f898:
+            uuid: a2b7032e-75b5-4f5d-98a0-bc413210f898
             region: content
             configuration:
               id: 'field_block:node:noticias:field_etiquetas'
@@ -90,8 +90,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 3
             additional: {  }
-          ff87954d-5e15-4438-9ae4-94a79720ba83:
-            uuid: ff87954d-5e15-4438-9ae4-94a79720ba83
+          b4556f50-b0ca-4dec-9a0d-c45a6dad5429:
+            uuid: b4556f50-b0ca-4dec-9a0d-c45a6dad5429
             region: content
             configuration:
               id: 'extra_field_block:node:noticias:links'
@@ -100,8 +100,8 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 4
             additional: {  }
-          58bb75ff-2a18-4285-87aa-acbfc0e91c7a:
-            uuid: 58bb75ff-2a18-4285-87aa-acbfc0e91c7a
+          33ef4581-f215-4300-99ea-a04f9ac4388a:
+            uuid: 33ef4581-f215-4300-99ea-a04f9ac4388a
             region: content
             configuration:
               id: 'views_block:noticias_relacionadas-block_1'

@@ -1,0 +1,22 @@
+uuid: 02d9b0e9-01f0-464a-b8d0-b0876e3ecae4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.receta
+id: node.receta.promote
+field_name: promote
+entity_type: node
+bundle: receta
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

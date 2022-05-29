@@ -1,16 +1,17 @@
-uuid: 0d06e5ef-4f71-4ac3-8310-990073563f17
+uuid: 8a4e7355-51a5-4fdf-913d-367a05123683
 langcode: es
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.noticias.body
-    - field.field.node.noticias.field_entrada
-    - field.field.node.noticias.field_etiquetas
-    - field.field.node.noticias.field_image
-    - field.field.node.noticias.layout_builder__layout
-    - image.style.thumbnail
-    - node.type.noticias
+    - field.field.node.receta.body
+    - field.field.node.receta.comment
+    - field.field.node.receta.field_dificultad
+    - field.field.node.receta.field_entrada
+    - field.field.node.receta.field_image
+    - field.field.node.receta.field_ingredientes
+    - field.field.node.receta.layout_builder__layout
+    - node.type.receta
   module:
     - image
     - layout_builder
@@ -24,15 +25,15 @@ third_party_settings:
       -
         layout_id: layout_twocol_section
         layout_settings:
-          label: vistanoticiasresumen
+          label: resumenvistarecetas
           context_mapping: {  }
-          column_widths: 25-75
+          column_widths: 33-67
         components:
-          b77555c0-ecf8-452d-b5d8-9873f4fb05b9:
-            uuid: b77555c0-ecf8-452d-b5d8-9873f4fb05b9
+          53036d09-516b-488f-9db7-f64d7fbe3431:
+            uuid: 53036d09-516b-488f-9db7-f64d7fbe3431
             region: first
             configuration:
-              id: 'field_block:node:noticias:field_image'
+              id: 'field_block:node:receta:field_image'
               label: Image
               label_display: '0'
               provider: layout_builder
@@ -53,8 +54,8 @@ third_party_settings:
                       field:
                         field: ''
                         custom:
-                          custom: Array
-                      custom: Array
+                          custom: ''
+                      custom: ''
                     advanced:
                       title: ''
                       target: ''
@@ -64,11 +65,11 @@ third_party_settings:
                     token: ''
             weight: 0
             additional: {  }
-          7df318f6-e21f-4730-9b82-bfdcb1390971:
-            uuid: 7df318f6-e21f-4730-9b82-bfdcb1390971
+          2186857e-0006-4de6-858f-ebce4f0bbcc5:
+            uuid: 2186857e-0006-4de6-858f-ebce4f0bbcc5
             region: second
             configuration:
-              id: 'field_block:node:noticias:field_entrada'
+              id: 'field_block:node:receta:field_entrada'
               label: entrada
               label_display: '0'
               provider: layout_builder
@@ -79,7 +80,7 @@ third_party_settings:
                 type: text_trimmed
                 label: hidden
                 settings:
-                  trim_length: 400
+                  trim_length: 200
                 third_party_settings:
                   linked_field:
                     linked: 0
@@ -100,16 +101,16 @@ third_party_settings:
             weight: 0
             additional: {  }
         third_party_settings: {  }
-id: node.noticias.teaser
+id: node.receta.teaser
 targetEntityType: node
-bundle: noticias
+bundle: receta
 mode: teaser
 content:
-  body:
-    type: text_summary_or_trimmed
+  field_entrada:
+    type: text_trimmed
     label: hidden
     settings:
-      trim_length: 600
+      trim_length: 200
     third_party_settings: {  }
     weight: 1
     region: content
@@ -117,14 +118,16 @@ content:
     type: image
     label: hidden
     settings:
-      image_link: content
-      image_style: thumbnail
+      image_link: ''
+      image_style: ''
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
-  field_entrada: true
-  field_etiquetas: true
+  body: true
+  comment: true
+  field_dificultad: true
+  field_ingredientes: true
   langcode: true
   layout_builder__layout: true
   links: true

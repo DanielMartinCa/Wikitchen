@@ -1,0 +1,11 @@
+uuid: c41c2b9b-5348-4b9a-b630-2651a1d49e84
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.receta
+id: node.receta
+target_entity_type_id: node
+target_bundle: receta
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: 79ac5029-09cf-4edb-9de2-1f9ff4224ccb
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Receta
+type: receta
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,22 @@
+uuid: 7ea13c81-2fb1-47cf-b92e-ac77e3f4b9b1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: aliasrecetas
+label: aliasrecetas
+type: 'canonical_entities:node'
+pattern: '/[node:content-type:name]/[node:title]'
+selection_criteria:
+  5bbbdf0e-c44f-41c1-b75b-fb874a0e326b:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5bbbdf0e-c44f-41c1-b75b-fb874a0e326b
+    context_mapping:
+      node: node
+    bundles:
+      receta: receta
+selection_logic: and
+weight: -5
+relationships: {  }

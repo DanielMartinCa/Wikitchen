@@ -1,0 +1,23 @@
+uuid: c50af32e-7f2c-4156-820e-5f2ceaf3e407
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.receta
+  module:
+    - text
+id: node.receta.body
+field_name: body
+entity_type: node
+bundle: receta
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

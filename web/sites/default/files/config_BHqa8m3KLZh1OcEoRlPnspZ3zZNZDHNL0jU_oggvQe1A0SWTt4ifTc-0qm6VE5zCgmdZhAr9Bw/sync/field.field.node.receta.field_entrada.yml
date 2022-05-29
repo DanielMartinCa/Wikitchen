@@ -1,0 +1,26 @@
+uuid: ba3ee9d3-81f4-4b37-a7c0-7f31a9c5c071
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entrada
+    - node.type.receta
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - basic_html
+id: node.receta.field_entrada
+field_name: field_entrada
+entity_type: node
+bundle: receta
+label: entrada
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
