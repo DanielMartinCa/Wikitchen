@@ -1,0 +1,25 @@
+uuid: 781aefcb-8513-4a61-984f-579e1922ec3f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.inicio.body
+    - field.field.node.inicio.layout_builder__layout
+    - node.type.inicio
+  module:
+    - user
+id: node.inicio.teaser
+targetEntityType: node
+bundle: inicio
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  langcode: true
+  layout_builder__layout: true

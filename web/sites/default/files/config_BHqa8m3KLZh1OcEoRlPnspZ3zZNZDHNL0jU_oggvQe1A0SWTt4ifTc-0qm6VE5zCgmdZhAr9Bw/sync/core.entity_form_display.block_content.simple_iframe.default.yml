@@ -1,0 +1,164 @@
+uuid: f9c62d78-dacb-4e6c-bc15-9147b5662cdd
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.simple_iframe
+    - field.field.block_content.simple_iframe.field_sif_extra_attributes
+    - field.field.block_content.simple_iframe.field_sif_extra_class
+    - field.field.block_content.simple_iframe.field_sif_height
+    - field.field.block_content.simple_iframe.field_sif_url
+  module:
+    - field_group
+    - link
+    - sliderwidget
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - group_general
+        - group_styles
+      label: Info
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        classes: ''
+        id: ''
+        direction: horizontal
+    group_general:
+      children:
+        - field_sif_url
+      label: General
+      region: content
+      parent_name: group_info
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: false
+    group_styles:
+      children:
+        - group_sizing
+        - group_misc
+      label: Styles
+      region: content
+      parent_name: group_info
+      weight: 21
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: false
+    group_sizing:
+      children:
+        - field_sif_height
+      label: Sizing
+      region: content
+      parent_name: group_styles
+      weight: 20
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_misc:
+      children:
+        - field_sif_extra_class
+        - field_sif_extra_attributes
+      label: Misc
+      region: content
+      parent_name: group_styles
+      weight: 21
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: AnAJwrMtuLPnfHtuXmiapyEXzd9HAf3j0ntUV4EcyZk
+id: block_content.simple_iframe.default
+targetEntityType: block_content
+bundle: simple_iframe
+mode: default
+content:
+  admin_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sif_extra_attributes:
+    type: string_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sif_extra_class:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sif_height:
+    type: sliderwidget_widget
+    weight: 4
+    region: content
+    settings:
+      sliderwidget_settings:
+        animate: false
+        orientation: horizontal
+        range: false
+        step: 1
+        slider_style: null
+        display_values: true
+        multi_value: false
+        display_values_format: '%{value}%'
+        display_bubble: false
+        display_bubble_format: '%{value}%'
+        slider_length: null
+        hide_inputs: true
+        hide_slider_handle_when_no_value: false
+    third_party_settings: {  }
+  field_sif_url:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

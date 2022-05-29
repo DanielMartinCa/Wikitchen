@@ -1,0 +1,26 @@
+uuid: b2161c3c-0e9f-43c1-b519-d6d400d4ef43
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entrada
+    - node.type.noticias
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - basic_html
+id: node.noticias.field_entrada
+field_name: field_entrada
+entity_type: node
+bundle: noticias
+label: entrada
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

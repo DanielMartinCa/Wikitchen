@@ -1,0 +1,88 @@
+uuid: 27f79263-6667-44d4-9ce0-484ee3f8328e
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.simple_tabs
+    - field.field.block_content.simple_tabs.field_st_item
+    - field.field.block_content.simple_tabs.field_sta_extra_class
+  module:
+    - entity_reference_revisions
+    - field_group
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - group_general
+        - group_styles
+      label: Info
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        id: ''
+        direction: horizontal
+    group_general:
+      children:
+        - field_st_item
+      label: General
+      region: content
+      parent_name: group_info
+      weight: 3
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: true
+    group_styles:
+      children:
+        - field_sta_extra_class
+      label: Styles
+      region: content
+      parent_name: group_info
+      weight: 4
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: 5eRPjgedrcZwQnJ6M6x4d8d7Qg_WrYkVYYlmY0W5C5s
+id: block_content.simple_tabs.default
+targetEntityType: block_content
+bundle: simple_tabs
+mode: default
+content:
+  field_st_item:
+    type: entity_reference_revisions_autocomplete
+    weight: 27
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sta_extra_class:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  info: true

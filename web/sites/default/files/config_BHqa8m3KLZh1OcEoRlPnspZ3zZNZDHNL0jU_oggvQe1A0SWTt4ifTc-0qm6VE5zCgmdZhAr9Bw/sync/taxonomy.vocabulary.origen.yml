@@ -1,0 +1,8 @@
+uuid: 8f239e83-84fc-42a8-9b38-edc0ae3daa5a
+langcode: es
+status: true
+dependencies: {  }
+name: Origen
+vid: origen
+description: 'Origen de la receta'
+weight: 0

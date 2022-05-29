@@ -1,0 +1,11 @@
+uuid: 21a3d931-8742-4cb6-b06f-ced2e691d8e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.noticias
+id: node.noticias
+target_entity_type_id: node
+target_bundle: noticias
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 754af80c-e098-4916-9a28-400a0798389b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.origen
+id: taxonomy_term.origen
+target_entity_type_id: taxonomy_term
+target_bundle: origen
+default_langcode: site_default
+language_alterable: false

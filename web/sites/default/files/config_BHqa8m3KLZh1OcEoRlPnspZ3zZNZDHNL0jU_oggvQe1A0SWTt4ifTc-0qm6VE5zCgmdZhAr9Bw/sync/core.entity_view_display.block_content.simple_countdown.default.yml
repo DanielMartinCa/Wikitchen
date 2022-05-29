@@ -1,0 +1,42 @@
+uuid: 9267c836-a79e-4924-9d27-f79c18ef19d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.simple_countdown
+    - field.field.block_content.simple_countdown.field_sc_color
+    - field.field.block_content.simple_countdown.field_sc_date
+    - field.field.block_content.simple_countdown.field_sc_size
+    - field.field.block_content.simple_countdown.field_sc_title
+  module:
+    - datetime
+    - entity_reference_revisions
+_core:
+  default_config_hash: jy77374bnDPfApun9T5xQae9t3vK2Z_GyaT-3AuFn6w
+id: block_content.simple_countdown.default
+targetEntityType: block_content
+bundle: simple_countdown
+mode: default
+content:
+  field_sc_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sc_title:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_sc_color: true
+  field_sc_size: true
+  langcode: true

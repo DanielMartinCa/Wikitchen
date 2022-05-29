@@ -1,0 +1,102 @@
+uuid: 52a1c042-6b4a-4e2e-933a-e6dda18c8666
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.simple_card
+    - field.field.block_content.simple_card.field_sca_extra_class
+    - field.field.block_content.simple_card.field_sca_item
+  module:
+    - entity_reference_revisions
+    - field_group
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - group_general
+        - group_styles
+      label: Info
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        id: ''
+        direction: horizontal
+    group_general:
+      children:
+        - field_sca_item
+      label: General
+      region: content
+      parent_name: group_info
+      weight: 4
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_styles:
+      children:
+        - group_misc
+      label: Styles
+      region: content
+      parent_name: group_info
+      weight: 5
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_misc:
+      children:
+        - field_sca_extra_class
+      label: Misc
+      region: content
+      parent_name: group_styles
+      weight: 20
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: R6wq7jn3kVb9DGUQXQ1idikjOXk_hV6OEKk8AGH4f3U
+id: block_content.simple_card.default
+targetEntityType: block_content
+bundle: simple_card
+mode: default
+content:
+  field_sca_extra_class:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sca_item:
+    type: entity_reference_revisions_autocomplete
+    weight: 27
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  info: true

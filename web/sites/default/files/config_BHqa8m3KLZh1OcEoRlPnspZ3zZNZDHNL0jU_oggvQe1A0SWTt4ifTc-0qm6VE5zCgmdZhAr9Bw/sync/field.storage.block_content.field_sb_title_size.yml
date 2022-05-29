@@ -1,0 +1,22 @@
+uuid: 5bc2e17e-2ec2-41a1-bae7-f2b4e5f0772d
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: JXM6JvbKFA5t8tfs8Fbva-8I2SzGPN2UOVOdPPo4Vss
+id: block_content.field_sb_title_size
+field_name: field_sb_title_size
+entity_type: block_content
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

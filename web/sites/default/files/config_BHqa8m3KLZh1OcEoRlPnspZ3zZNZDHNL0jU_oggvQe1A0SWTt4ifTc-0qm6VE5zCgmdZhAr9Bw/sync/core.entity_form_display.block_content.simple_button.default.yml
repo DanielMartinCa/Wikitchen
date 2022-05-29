@@ -1,0 +1,397 @@
+uuid: 94190173-23a5-460c-8f5f-9131bb4930b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.simple_button
+    - field.field.block_content.simple_button.field_sb_align
+    - field.field.block_content.simple_button.field_sb_background_color
+    - field.field.block_content.simple_button.field_sb_border_color
+    - field.field.block_content.simple_button.field_sb_border_size
+    - field.field.block_content.simple_button.field_sb_border_type
+    - field.field.block_content.simple_button.field_sb_extra_attributes
+    - field.field.block_content.simple_button.field_sb_extra_class
+    - field.field.block_content.simple_button.field_sb_margin_bottom
+    - field.field.block_content.simple_button.field_sb_margin_top
+    - field.field.block_content.simple_button.field_sb_padding_bottom
+    - field.field.block_content.simple_button.field_sb_padding_top
+    - field.field.block_content.simple_button.field_sb_title_color
+    - field.field.block_content.simple_button.field_sb_title_size
+    - field.field.block_content.simple_button.field_sb_url
+    - field.field.block_content.simple_button.field_sb_width
+  module:
+    - color_field
+    - field_group
+    - link
+    - sliderwidget
+third_party_settings:
+  field_group:
+    group_info:
+      children:
+        - group_general
+        - group_styles
+      label: Info
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        id: ''
+        direction: horizontal
+    group_general:
+      children:
+        - field_sb_url
+      label: General
+      region: content
+      parent_name: group_info
+      weight: 17
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: open
+        description: ''
+        required_fields: true
+    group_styles:
+      children:
+        - group_text
+        - group_background
+        - group_border
+        - group_spacing
+        - group_sizing
+        - group_misc
+      label: Styles
+      region: content
+      parent_name: group_info
+      weight: 18
+      format_type: tab
+      format_settings:
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_background:
+      children:
+        - field_sb_background_color
+      label: Background
+      region: content
+      parent_name: group_styles
+      weight: 21
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_border:
+      children:
+        - field_sb_border_type
+        - field_sb_border_size
+        - field_sb_border_color
+      label: Border
+      region: content
+      parent_name: group_styles
+      weight: 22
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_text:
+      children:
+        - field_sb_title_color
+        - field_sb_title_size
+      label: Text
+      region: content
+      parent_name: group_styles
+      weight: 20
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_spacing:
+      children:
+        - field_sb_margin_top
+        - field_sb_margin_bottom
+        - field_sb_padding_top
+        - field_sb_padding_bottom
+      label: Spacing
+      region: content
+      parent_name: group_styles
+      weight: 23
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_misc:
+      children:
+        - field_sb_extra_class
+        - field_sb_extra_attributes
+      label: Misc
+      region: content
+      parent_name: group_styles
+      weight: 25
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+    group_sizing:
+      children:
+        - field_sb_align
+        - field_sb_width
+      label: Sizing
+      region: content
+      parent_name: group_styles
+      weight: 24
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: _FhRzflO39FtN9oIk70nmjciQxzFRLUUjruFpwdqTlE
+id: block_content.simple_button.default
+targetEntityType: block_content
+bundle: simple_button
+mode: default
+content:
+  field_sb_align:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sb_background_color:
+    type: color_field_widget_box
+    weight: 21
+    region: content
+    settings:
+      default_colors: |-
+
+        #AC725E,#D06B64,#F83A22,#FA573C,#FF7537,#FFAD46
+        #42D692,#16A765,#7BD148,#B3DC6C,#FBE983
+        #92E1C0,#9FE1E7,#9FC6E7,#4986E7,#9A9CFF
+        #B99AFF,#C2C2C2,#CABDBF,#CCA6AC,#F691B2
+        #CD74E6,#A47AE2
+    third_party_settings: {  }
+  field_sb_border_color:
+    type: color_field_widget_box
+    weight: 4
+    region: content
+    settings:
+      default_colors: |-
+
+        #AC725E,#D06B64,#F83A22,#FA573C,#FF7537,#FFAD46
+        #42D692,#16A765,#7BD148,#B3DC6C,#FBE983
+        #92E1C0,#9FE1E7,#9FC6E7,#4986E7,#9A9CFF
+        #B99AFF,#C2C2C2,#CABDBF,#CCA6AC,#F691B2
+        #CD74E6,#A47AE2
+    third_party_settings: {  }
+  field_sb_border_size:
+    type: sliderwidget_widget
+    weight: 3
+    region: content
+    settings:
+      sliderwidget_settings:
+        animate: false
+        orientation: horizontal
+        range: false
+        step: 1
+        slider_style: null
+        display_values: true
+        multi_value: false
+        display_values_format: '%{value}%'
+        display_bubble: false
+        display_bubble_format: '%{value}%'
+        slider_length: null
+        hide_inputs: true
+        hide_slider_handle_when_no_value: false
+    third_party_settings: {  }
+  field_sb_border_type:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sb_extra_attributes:
+    type: string_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sb_extra_class:
+    type: string_textfield
+    weight: 25
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sb_margin_bottom:
+    type: sliderwidget_widget
+    weight: 1
+    region: content
+    settings:
+      sliderwidget_settings:
+        animate: false
+        orientation: horizontal
+        range: false
+        step: 1
+        slider_style: null
+        display_values: true
+        multi_value: false
+        display_values_format: '%{value}%'
+        display_bubble: false
+        display_bubble_format: '%{value}%'
+        slider_length: null
+        hide_inputs: true
+        hide_slider_handle_when_no_value: false
+    third_party_settings: {  }
+  field_sb_margin_top:
+    type: sliderwidget_widget
+    weight: 0
+    region: content
+    settings:
+      sliderwidget_settings:
+        animate: false
+        orientation: horizontal
+        range: false
+        step: 1
+        slider_style: null
+        display_values: true
+        multi_value: false
+        display_values_format: '%{value}%'
+        display_bubble: false
+        display_bubble_format: '%{value}%'
+        slider_length: null
+        hide_inputs: true
+        hide_slider_handle_when_no_value: false
+    third_party_settings: {  }
+  field_sb_padding_bottom:
+    type: sliderwidget_widget
+    weight: 3
+    region: content
+    settings:
+      sliderwidget_settings:
+        animate: false
+        orientation: horizontal
+        range: false
+        step: 1
+        slider_style: null
+        display_values: true
+        multi_value: false
+        display_values_format: '%{value}%'
+        display_bubble: false
+        display_bubble_format: '%{value}%'
+        slider_length: null
+        hide_inputs: true
+        hide_slider_handle_when_no_value: false
+    third_party_settings: {  }
+  field_sb_padding_top:
+    type: sliderwidget_widget
+    weight: 2
+    region: content
+    settings:
+      sliderwidget_settings:
+        animate: false
+        orientation: horizontal
+        range: false
+        step: 1
+        slider_style: null
+        display_values: true
+        multi_value: false
+        display_values_format: '%{value}%'
+        display_bubble: false
+        display_bubble_format: '%{value}%'
+        slider_length: null
+        hide_inputs: true
+        hide_slider_handle_when_no_value: false
+    third_party_settings: {  }
+  field_sb_title_color:
+    type: color_field_widget_box
+    weight: 0
+    region: content
+    settings:
+      default_colors: |-
+
+        #AC725E,#D06B64,#F83A22,#FA573C,#FF7537,#FFAD46
+        #42D692,#16A765,#7BD148,#B3DC6C,#FBE983
+        #92E1C0,#9FE1E7,#9FC6E7,#4986E7,#9A9CFF
+        #B99AFF,#C2C2C2,#CABDBF,#CCA6AC,#F691B2
+        #CD74E6,#A47AE2
+    third_party_settings: {  }
+  field_sb_title_size:
+    type: sliderwidget_widget
+    weight: 1
+    region: content
+    settings:
+      sliderwidget_settings:
+        animate: false
+        orientation: horizontal
+        range: false
+        step: 1
+        slider_style: null
+        display_values: true
+        multi_value: false
+        display_values_format: '%{value}%'
+        display_bubble: false
+        display_bubble_format: '%{value}%'
+        slider_length: null
+        hide_inputs: true
+        hide_slider_handle_when_no_value: false
+    third_party_settings: {  }
+  field_sb_url:
+    type: link_default
+    weight: 21
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_sb_width:
+    type: sliderwidget_widget
+    weight: 1
+    region: content
+    settings:
+      sliderwidget_settings:
+        animate: false
+        orientation: horizontal
+        range: false
+        step: 1
+        slider_style: null
+        display_values: true
+        multi_value: false
+        display_values_format: '%{value}%'
+        display_bubble: false
+        display_bubble_format: '%{value}%'
+        slider_length: null
+        hide_inputs: true
+        hide_slider_handle_when_no_value: false
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  info: true

@@ -1,0 +1,32 @@
+uuid: 9a2e5d78-4cfb-4342-ae4e-56b9e8ccbe6a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.inicio.body
+    - field.field.node.inicio.layout_builder__layout
+    - node.type.inicio
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.inicio.default
+targetEntityType: node
+bundle: inicio
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  links: true

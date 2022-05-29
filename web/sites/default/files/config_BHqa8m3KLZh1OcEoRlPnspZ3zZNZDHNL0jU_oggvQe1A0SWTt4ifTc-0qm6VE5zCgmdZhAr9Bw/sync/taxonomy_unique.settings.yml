@@ -1,0 +1,8 @@
+dificultad: 1
+dificultad_message: 'Term %term already exists in vocabulary %vocabulary.'
+origen: 1
+origen_message: 'Term %term already exists in vocabulary %vocabulary.'
+ingredientes: 1
+ingredientes_message: 'Term %term already exists in vocabulary %vocabulary.'
+tipo_de_noticias: 1
+tipo_de_noticias_message: 'Term %term already exists in vocabulary %vocabulary.'

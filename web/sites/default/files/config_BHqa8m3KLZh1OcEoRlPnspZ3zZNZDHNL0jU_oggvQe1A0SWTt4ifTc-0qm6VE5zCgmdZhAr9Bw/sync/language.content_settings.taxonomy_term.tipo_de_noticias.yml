@@ -1,0 +1,11 @@
+uuid: 9e5676b9-41f6-42fa-895d-a320b567bfb9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_noticias
+id: taxonomy_term.tipo_de_noticias
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_noticias
+default_langcode: site_default
+language_alterable: false

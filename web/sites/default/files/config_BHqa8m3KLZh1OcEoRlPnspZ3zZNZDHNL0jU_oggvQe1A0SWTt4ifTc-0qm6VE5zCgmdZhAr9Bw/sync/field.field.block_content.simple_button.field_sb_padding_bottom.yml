@@ -1,0 +1,27 @@
+uuid: 9140a4fc-e7ba-4340-9e15-5737d31a6feb
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.simple_button
+    - field.storage.block_content.field_sb_padding_bottom
+_core:
+  default_config_hash: oiybrME-y8DL7Lz2WU_nLputFHXBPDTfLz7l7CTBTHw
+id: block_content.simple_button.field_sb_padding_bottom
+field_name: field_sb_padding_bottom
+entity_type: block_content
+bundle: simple_button
+label: 'Padding bottom'
+description: 'Set the padding-bottom of this button'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: 50
+  prefix: ''
+  suffix: ''
+field_type: integer

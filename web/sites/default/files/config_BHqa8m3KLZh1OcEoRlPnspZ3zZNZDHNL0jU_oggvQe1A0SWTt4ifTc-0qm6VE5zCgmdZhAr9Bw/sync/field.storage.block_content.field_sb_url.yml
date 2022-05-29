@@ -1,0 +1,21 @@
+uuid: 196e4178-21fe-4d03-8045-ca23f76a162e
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+_core:
+  default_config_hash: Uv8Khh8Wuz_cfq-ZaONxacWjGRTk_Rse4zLbAe9kiqc
+id: block_content.field_sb_url
+field_name: field_sb_url
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

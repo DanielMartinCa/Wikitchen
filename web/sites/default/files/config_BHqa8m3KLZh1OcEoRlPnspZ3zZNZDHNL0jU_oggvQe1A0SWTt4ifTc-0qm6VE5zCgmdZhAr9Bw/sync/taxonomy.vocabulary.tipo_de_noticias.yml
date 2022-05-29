@@ -1,0 +1,8 @@
+uuid: fd9f3f57-db84-4152-9cc9-4bfda18b8b25
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de noticias'
+vid: tipo_de_noticias
+description: ''
+weight: 0

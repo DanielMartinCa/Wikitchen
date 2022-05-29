@@ -1,0 +1,10 @@
+uuid: 7c7a8d50-b165-465b-9490-05cef73b6ebc
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.noticias_relacionadas
+label: 'noticias relacionadas'
+targetEntityType: node
+cache: true
