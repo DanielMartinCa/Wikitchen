@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/admin_toolbar": "^3.1",
         "drupal/allowed_formats": "^1.5",
         "drupal/bootstrap4": "^2.1",
         "drupal/core-composer-scaffold": "^9.3",
@@ -28,6 +29,7 @@
         "drupal/image_effects": "^3.2",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/layoutcomponents": "^3.0",
+        "drupal/pathauto": "^1.10",
         "drupal/taxonomy_menu": "^3.5",
         "drupal/taxonomy_unique": "^2.3",
         "drush/drush": "^11.0"

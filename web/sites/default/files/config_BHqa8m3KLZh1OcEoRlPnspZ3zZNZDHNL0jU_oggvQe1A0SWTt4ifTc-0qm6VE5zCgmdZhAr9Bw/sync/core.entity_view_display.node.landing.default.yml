@@ -5,15 +5,14 @@ dependencies:
   config:
     - field.field.node.landing.body
     - field.field.node.landing.field_image
-    - field.field.node.landing.layout_builder__layout
     - node.type.landing
   module:
     - layout_builder
     - user
 third_party_settings:
   layout_builder:
-    enabled: false
-    allow_custom: false
+    enabled: true
+    allow_custom: true
 id: node.landing.default
 targetEntityType: node
 bundle: landing
