@@ -4,18 +4,27 @@ status: true
 dependencies:
   config:
     - node.type.article
+    - node.type.contenido_prueba
+    - node.type.inicio
+    - node.type.landing
+    - node.type.noticias
     - node.type.page
+    - node.type.receta
     - taxonomy.vocabulary.tags
   module:
     - comment
+    - contact
     - contextual
     - file
     - node
     - path
+    - pathauto
+    - responsive_image
     - system
     - taxonomy
     - toolbar
     - tour
+    - views_ui
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
@@ -29,20 +38,73 @@ permissions:
   - 'access files overview'
   - 'access toolbar'
   - 'access tour'
+  - 'access user contact forms'
+  - 'administer pathauto'
+  - 'administer responsive images'
   - 'administer url aliases'
+  - 'administer views'
   - 'create article content'
+  - 'create contenido_prueba content'
+  - 'create inicio content'
+  - 'create landing content'
+  - 'create noticias content'
   - 'create page content'
+  - 'create receta content'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'delete any article content'
+  - 'delete any contenido_prueba content'
+  - 'delete any inicio content'
+  - 'delete any landing content'
+  - 'delete any noticias content'
+  - 'delete any page content'
+  - 'delete any receta content'
   - 'delete article revisions'
+  - 'delete contenido_prueba revisions'
+  - 'delete inicio revisions'
+  - 'delete landing revisions'
+  - 'delete noticias revisions'
   - 'delete own article content'
+  - 'delete own contenido_prueba content'
+  - 'delete own inicio content'
+  - 'delete own landing content'
+  - 'delete own noticias content'
   - 'delete own page content'
+  - 'delete own receta content'
   - 'delete page revisions'
+  - 'delete receta revisions'
+  - 'edit any article content'
+  - 'edit any contenido_prueba content'
+  - 'edit any inicio content'
+  - 'edit any landing content'
+  - 'edit any noticias content'
+  - 'edit any page content'
+  - 'edit any receta content'
   - 'edit own article content'
   - 'edit own comments'
+  - 'edit own contenido_prueba content'
+  - 'edit own inicio content'
+  - 'edit own landing content'
+  - 'edit own noticias content'
   - 'edit own page content'
+  - 'edit own receta content'
   - 'edit terms in tags'
+  - 'notify of path changes'
   - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert contenido_prueba revisions'
+  - 'revert inicio revisions'
+  - 'revert landing revisions'
+  - 'revert noticias revisions'
+  - 'revert page revisions'
+  - 'revert receta revisions'
   - 'view all revisions'
+  - 'view article revisions'
+  - 'view contenido_prueba revisions'
+  - 'view inicio revisions'
+  - 'view landing revisions'
+  - 'view noticias revisions'
   - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view receta revisions'
   - 'view the administration theme'
