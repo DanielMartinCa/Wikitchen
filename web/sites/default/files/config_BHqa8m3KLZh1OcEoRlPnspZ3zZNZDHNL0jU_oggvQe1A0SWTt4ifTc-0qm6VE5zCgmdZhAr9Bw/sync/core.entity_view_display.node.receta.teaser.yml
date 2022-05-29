@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.receta.body
     - field.field.node.receta.comment
+    - field.field.node.receta.field_destacada
     - field.field.node.receta.field_dificultad
     - field.field.node.receta.field_entrada
     - field.field.node.receta.field_image
@@ -80,7 +81,7 @@ third_party_settings:
                 type: text_trimmed
                 label: hidden
                 settings:
-                  trim_length: 200
+                  trim_length: 400
                 third_party_settings:
                   linked_field:
                     linked: 0
@@ -89,8 +90,8 @@ third_party_settings:
                       field:
                         field: ''
                         custom:
-                          custom: ''
-                      custom: ''
+                          custom: Array
+                      custom: Array
                     advanced:
                       title: ''
                       target: ''
@@ -126,6 +127,7 @@ content:
 hidden:
   body: true
   comment: true
+  field_destacada: true
   field_dificultad: true
   field_ingredientes: true
   langcode: true

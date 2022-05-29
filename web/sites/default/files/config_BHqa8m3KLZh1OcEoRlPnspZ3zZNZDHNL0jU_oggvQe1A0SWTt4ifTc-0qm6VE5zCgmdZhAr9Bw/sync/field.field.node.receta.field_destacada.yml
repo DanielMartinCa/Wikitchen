@@ -1,0 +1,23 @@
+uuid: 13b3a7db-38bf-465c-b09f-eb7aa97cf3ad
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destacada
+    - node.type.receta
+id: node.receta.field_destacada
+field_name: field_destacada
+entity_type: node
+bundle: receta
+label: destacada
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
