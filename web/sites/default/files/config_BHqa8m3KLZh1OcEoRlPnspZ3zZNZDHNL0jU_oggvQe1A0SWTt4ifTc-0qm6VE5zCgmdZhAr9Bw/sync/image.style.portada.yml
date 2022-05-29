@@ -1,19 +1,15 @@
 uuid: 0f0d653d-b9e0-4279-b913-0f2e393ad959
 langcode: es
 status: true
-dependencies:
-  module:
-    - image_effects
+dependencies: {  }
 name: portada
 label: portada
 effects:
-  71f6f323-a04e-4f74-852b-c1cf263126a6:
-    uuid: 71f6f323-a04e-4f74-852b-c1cf263126a6
-    id: image_effects_scale_and_smart_crop
+  e469b8f0-cd28-4dfa-bb45-99a1e4328ae5:
+    uuid: e469b8f0-cd28-4dfa-bb45-99a1e4328ae5
+    id: image_scale_and_crop
     weight: 1
     data:
-      width: 100%
-      height: '200'
-      upscale: false
-      simulate: false
-      algorithm: entropy_slice
+      width: 960
+      height: 200
+      anchor: center-center

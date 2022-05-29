@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.noticias.body
+    - field.field.node.noticias.field_destacada
     - field.field.node.noticias.field_entrada
     - field.field.node.noticias.field_etiquetas
     - field.field.node.noticias.field_image
@@ -123,6 +124,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_destacada: true
   field_entrada: true
   field_etiquetas: true
   langcode: true

@@ -1,0 +1,23 @@
+uuid: 38af74f1-8efa-484b-95c3-18740a0e0c35
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destacada
+    - node.type.noticias
+id: node.noticias.field_destacada
+field_name: field_destacada
+entity_type: node
+bundle: noticias
+label: destacada
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

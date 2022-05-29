@@ -12,8 +12,8 @@ _core:
   default_config_hash: bSenKfxHQ1-_DHnPlsMsap_D6fif7bbe3kh9k31LkdU
 id: bootstrap4_account_menu
 theme: bootstrap4
-region: nav_additional
-weight: -7
+region: nav_branding
+weight: -5
 provider: null
 plugin: 'system_menu_block:account'
 settings:

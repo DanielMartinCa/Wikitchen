@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.noticias.body
+    - field.field.node.noticias.field_destacada
     - field.field.node.noticias.field_entrada
     - field.field.node.noticias.field_etiquetas
     - field.field.node.noticias.field_image
@@ -113,6 +114,24 @@ third_party_settings:
               items_per_page: none
             weight: 5
             additional: {  }
+          850d50e6-aebe-4811-933e-a24a7b7f7999:
+            uuid: 850d50e6-aebe-4811-933e-a24a7b7f7999
+            region: content
+            configuration:
+              id: 'field_block:node:noticias:field_destacada'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
         third_party_settings: {  }
 id: node.noticias.default
 targetEntityType: node
@@ -125,6 +144,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_destacada:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_entrada:
     type: text_default

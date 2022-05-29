@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.noticias.body
+    - field.field.node.noticias.field_destacada
     - field.field.node.noticias.field_entrada
     - field.field.node.noticias.field_etiquetas
     - field.field.node.noticias.field_image
@@ -34,6 +35,13 @@ content:
     weight: 3
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_destacada:
+    type: boolean_checkbox
+    weight: 26
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_entrada:
     type: text_textarea

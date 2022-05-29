@@ -4,11 +4,11 @@ langcode: es
 uuid: 12c8f231-f08c-4de6-9aa2-ad1f267dfc8c
 name: Wikitchen
 mail: txupetin@gmail.com
-slogan: ''
+slogan: 'El mundo de la cocina en tu mano'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/5
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: es
