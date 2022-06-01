@@ -11,6 +11,11 @@ dependencies:
     - field.field.node.receta.field_entrada
     - field.field.node.receta.field_image
     - field.field.node.receta.field_ingredientes
+    - field.field.node.receta.field_sin_crustaceos
+    - field.field.node.receta.field_sin_frutos_secos
+    - field.field.node.receta.field_sin_gluten
+    - field.field.node.receta.field_sin_lactosa
+    - field.field.node.receta.field_tipo_de_cocina
     - field.field.node.receta.layout_builder__layout
     - node.type.receta
   module:
@@ -130,6 +135,11 @@ hidden:
   field_destacada: true
   field_dificultad: true
   field_ingredientes: true
+  field_sin_crustaceos: true
+  field_sin_frutos_secos: true
+  field_sin_gluten: true
+  field_sin_lactosa: true
+  field_tipo_de_cocina: true
   langcode: true
   layout_builder__layout: true
   links: true

@@ -1,7 +1,9 @@
 uuid: 0f0d653d-b9e0-4279-b913-0f2e393ad959
 langcode: es
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - image_effects
 name: portada
 label: portada
 effects:
@@ -13,3 +15,9 @@ effects:
       width: 960
       height: 200
       anchor: center-center
+  8203e567-f391-4fb6-8e5e-75d57329e8c2:
+    uuid: 8203e567-f391-4fb6-8e5e-75d57329e8c2
+    id: image_effects_opacity
+    weight: 2
+    data:
+      opacity: 50

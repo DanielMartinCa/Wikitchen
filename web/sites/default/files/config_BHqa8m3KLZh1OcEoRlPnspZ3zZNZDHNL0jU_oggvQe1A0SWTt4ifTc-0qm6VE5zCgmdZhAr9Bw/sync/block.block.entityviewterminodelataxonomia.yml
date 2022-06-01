@@ -1,0 +1,33 @@
+uuid: 14ef2ed2-de78-404e-873d-74c9d3693d75
+langcode: es
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+  theme:
+    - bootstrap4
+id: entityviewterminodelataxonomia
+theme: bootstrap4
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'entity_view:taxonomy_term'
+settings:
+  id: 'entity_view:taxonomy_term'
+  label: 'Entity view (Término de la taxonomía)'
+  label_display: '0'
+  provider: ctools
+  view_mode: token
+  context_mapping:
+    entity: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+visibility:
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      ingredientes: ingredientes
+      origen: origen
+      tipo_de_noticias: tipo_de_noticias

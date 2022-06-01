@@ -11,6 +11,11 @@ dependencies:
     - field.field.node.receta.field_entrada
     - field.field.node.receta.field_image
     - field.field.node.receta.field_ingredientes
+    - field.field.node.receta.field_sin_crustaceos
+    - field.field.node.receta.field_sin_frutos_secos
+    - field.field.node.receta.field_sin_gluten
+    - field.field.node.receta.field_sin_lactosa
+    - field.field.node.receta.field_tipo_de_cocina
     - field.field.node.receta.layout_builder__layout
     - node.type.receta
     - views.view.recetas_relacionadas
@@ -27,6 +32,13 @@ third_party_settings:
     enabled: true
     allow_custom: true
     sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Tipo de cocina'
+          context_mapping: {  }
+        components: {  }
+        third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
@@ -66,24 +78,6 @@ third_party_settings:
                       text: ''
                     token: ''
             weight: 0
-            additional: {  }
-          35ce92bf-3037-43a1-940f-398e325a34e3:
-            uuid: 35ce92bf-3037-43a1-940f-398e325a34e3
-            region: content
-            configuration:
-              id: 'field_block:node:receta:field_destacada'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: boolean
-                label: above
-                settings:
-                  format: default
-                  format_custom_false: ''
-                  format_custom_true: ''
-                third_party_settings: {  }
-            weight: 1
             additional: {  }
         third_party_settings: {  }
       -
@@ -127,7 +121,7 @@ third_party_settings:
                       rel: ''
                       text: ''
                     token: ''
-            weight: 0
+            weight: 1
             additional: {  }
           7f90e3d9-26b2-43c7-8f97-693dc4729dc2:
             uuid: 7f90e3d9-26b2-43c7-8f97-693dc4729dc2
@@ -145,6 +139,196 @@ third_party_settings:
                 label: above
                 settings:
                   link: true
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+            weight: 0
+            additional: {  }
+          3c859aa5-76aa-4d27-a632-e22ce5e48293:
+            uuid: 3c859aa5-76aa-4d27-a632-e22ce5e48293
+            region: first
+            configuration:
+              id: 'field_block:node:receta:field_tipo_de_cocina'
+              label: 'Tipo de cocina'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: false
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_fourcol_section
+        layout_settings:
+          label: alérgenos
+          context_mapping: {  }
+        components:
+          aa9a8278-8b3d-413c-a853-aba78167b712:
+            uuid: aa9a8278-8b3d-413c-a853-aba78167b712
+            region: first
+            configuration:
+              id: 'field_block:node:receta:field_sin_gluten'
+              label: 'Sin gluten'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: yes-no
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+            weight: 0
+            additional: {  }
+          fd25f2d7-afc6-4c80-92a1-757bc3e3bb22:
+            uuid: fd25f2d7-afc6-4c80-92a1-757bc3e3bb22
+            region: second
+            configuration:
+              id: 'field_block:node:receta:field_sin_lactosa'
+              label: 'Sin lactosa'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: yes-no
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+            weight: 0
+            additional: {  }
+          37b05f1a-c529-4e24-9df6-2a160538eeaa:
+            uuid: 37b05f1a-c529-4e24-9df6-2a160538eeaa
+            region: third
+            configuration:
+              id: 'field_block:node:receta:field_sin_frutos_secos'
+              label: 'Sin frutos secos'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: yes-no
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
+            weight: 0
+            additional: {  }
+          fc0f7e49-be52-4a00-b98e-8c06f0af3a7e:
+            uuid: fc0f7e49-be52-4a00-b98e-8c06f0af3a7e
+            region: fourth
+            configuration:
+              id: 'field_block:node:receta:field_sin_crustaceos'
+              label: 'Sin crustáceos'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: yes-no
+                  format_custom_false: ''
+                  format_custom_true: ''
                 third_party_settings:
                   linked_field:
                     linked: 0
@@ -325,7 +509,48 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_sin_crustaceos:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_sin_frutos_secos:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_sin_gluten:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_sin_lactosa:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
 hidden:
+  field_tipo_de_cocina: true
   langcode: true
   layout_builder__layout: true
   links: true

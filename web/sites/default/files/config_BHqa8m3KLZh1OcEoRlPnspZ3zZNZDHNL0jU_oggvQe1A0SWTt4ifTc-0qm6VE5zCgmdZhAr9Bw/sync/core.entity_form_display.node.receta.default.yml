@@ -10,6 +10,11 @@ dependencies:
     - field.field.node.receta.field_entrada
     - field.field.node.receta.field_image
     - field.field.node.receta.field_ingredientes
+    - field.field.node.receta.field_sin_crustaceos
+    - field.field.node.receta.field_sin_frutos_secos
+    - field.field.node.receta.field_sin_gluten
+    - field.field.node.receta.field_sin_lactosa
+    - field.field.node.receta.field_tipo_de_cocina
     - field.field.node.receta.layout_builder__layout
     - image.style.thumbnail
     - node.type.receta
@@ -83,6 +88,40 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_sin_crustaceos:
+    type: boolean_checkbox
+    weight: 30
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_sin_frutos_secos:
+    type: boolean_checkbox
+    weight: 29
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_sin_gluten:
+    type: boolean_checkbox
+    weight: 27
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_sin_lactosa:
+    type: boolean_checkbox
+    weight: 28
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_tipo_de_cocina:
+    type: options_buttons
+    weight: 31
+    region: content
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

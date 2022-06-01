@@ -1,0 +1,23 @@
+uuid: d4ab0de1-c8e2-4e1f-9eb4-436655765186
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sin_crustaceos
+    - node.type.receta
+id: node.receta.field_sin_crustaceos
+field_name: field_sin_crustaceos
+entity_type: node
+bundle: receta
+label: 'Sin crustáceos'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

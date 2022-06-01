@@ -1,0 +1,23 @@
+uuid: 4ef38df0-67b8-4a10-be08-8951bc4a5385
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sin_frutos_secos
+    - node.type.receta
+id: node.receta.field_sin_frutos_secos
+field_name: field_sin_frutos_secos
+entity_type: node
+bundle: receta
+label: 'Sin frutos secos'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

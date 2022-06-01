@@ -1,0 +1,29 @@
+uuid: 3431dcd7-6f8e-4004-86da-bfc195177a03
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_cocina
+    - node.type.receta
+    - taxonomy.vocabulary.origen
+id: node.receta.field_tipo_de_cocina
+field_name: field_tipo_de_cocina
+entity_type: node
+bundle: receta
+label: 'Tipo de cocina'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      origen: origen
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

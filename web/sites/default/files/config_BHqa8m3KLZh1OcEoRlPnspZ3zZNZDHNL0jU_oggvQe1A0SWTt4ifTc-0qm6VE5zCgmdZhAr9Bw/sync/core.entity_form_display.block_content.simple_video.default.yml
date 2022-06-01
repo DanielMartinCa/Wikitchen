@@ -22,77 +22,77 @@ third_party_settings:
       children:
         - group_general
         - group_styles
+      label: Info
+      region: content
       parent_name: ''
       weight: 0
       format_type: tabs
-      region: content
       format_settings:
-        id: ''
         classes: ''
+        id: ''
         direction: horizontal
-      label: Info
     group_general:
       children:
         - field_sv_video_type
         - field_sv_video
         - field_sv_upload_video
+      label: General
+      region: content
       parent_name: group_info
       weight: 7
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: open
+        description: ''
         required_fields: true
-      label: General
     group_styles:
       children:
         - group_sizing
         - group_misc
+      label: Styles
+      region: content
       parent_name: group_info
       weight: 8
       format_type: tab
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         formatter: closed
+        description: ''
         required_fields: true
-      label: Styles
     group_sizing:
       children:
         - field_sv_video_ratio
+      label: Sizing
+      region: content
       parent_name: group_styles
       weight: 20
       format_type: details
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         open: false
+        description: ''
         required_fields: true
-      label: Sizing
     group_misc:
       children:
         - field_sv_video_veil
         - field_sv_image
         - field_sv_video_extra_class
         - field_sv_video_extra_attributes
+      label: Misc
+      region: content
       parent_name: group_styles
       weight: 21
       format_type: details
-      region: content
       format_settings:
-        id: ''
         classes: ''
-        description: ''
+        id: ''
         open: false
+        description: ''
         required_fields: true
-      label: Misc
 _core:
   default_config_hash: nzjMo7Dx2M-vC_MQjMzGGmQMSRT_gop9-_zr4jJ8ZrU
 id: block_content.simple_video.default
@@ -111,58 +111,58 @@ content:
   field_sv_image:
     type: media_library_widget
     weight: 28
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
   field_sv_upload_video:
+    type: media_library_widget
     weight: 4
+    region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-    type: media_library_widget
-    region: content
   field_sv_video:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
     type: video_embed_field_textfield
+    weight: 3
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_sv_video_extra_attributes:
+    type: string_textfield
     weight: 30
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_sv_video_extra_class:
+    type: string_textfield
     weight: 29
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_sv_video_ratio:
+    type: options_select
     weight: 26
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_sv_video_type:
+    type: options_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_sv_video_veil:
+    type: boolean_checkbox
     weight: 27
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   info:
     type: string_textfield
     weight: -5

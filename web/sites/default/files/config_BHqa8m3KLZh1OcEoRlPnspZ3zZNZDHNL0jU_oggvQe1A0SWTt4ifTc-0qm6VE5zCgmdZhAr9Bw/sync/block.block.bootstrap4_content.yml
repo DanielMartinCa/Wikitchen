@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   module:
+    - node
     - system
   theme:
     - bootstrap4
@@ -11,7 +12,7 @@ _core:
 id: bootstrap4_content
 theme: bootstrap4
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: system_main_block
 settings:
@@ -19,4 +20,12 @@ settings:
   label: 'Main page content'
   label_display: '0'
   provider: system
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      noticias: noticias
+      receta: receta

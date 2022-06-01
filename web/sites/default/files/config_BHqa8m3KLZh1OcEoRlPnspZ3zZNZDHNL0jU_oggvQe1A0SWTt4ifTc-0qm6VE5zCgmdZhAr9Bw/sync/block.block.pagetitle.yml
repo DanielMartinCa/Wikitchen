@@ -1,0 +1,18 @@
+uuid: 57e43650-7203-4c56-8d65-f6b272228253
+langcode: es
+status: true
+dependencies:
+  theme:
+    - bootstrap4
+id: pagetitle
+theme: bootstrap4
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
