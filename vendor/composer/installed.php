@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '91dd9d81d535063698a97b7661153d693ef16031',
+        'reference' => '8552dd7cd7b3c5f5e86e69cb9dbc238e903acc57',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -550,6 +550,15 @@
                 0 => '9.3.13',
             ),
         ),
+        'drupal/creative_responsive_theme' => array(
+            'pretty_version' => '2.0.2',
+            'version' => '2.0.2.0',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../web/themes/contrib/creative_responsive_theme',
+            'aliases' => array(),
+            'reference' => '2.0.2',
+            'dev_requirement' => false,
+        ),
         'drupal/ctools' => array(
             'pretty_version' => '3.7.0',
             'version' => '3.7.0.0',
@@ -973,7 +982,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '91dd9d81d535063698a97b7661153d693ef16031',
+            'reference' => '8552dd7cd7b3c5f5e86e69cb9dbc238e903acc57',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -1047,6 +1056,15 @@
             'replaced' => array(
                 0 => '9.3.13',
             ),
+        ),
+        'drupal/tara' => array(
+            'pretty_version' => '8.3.3',
+            'version' => '8.3.3.0',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../web/themes/contrib/tara',
+            'aliases' => array(),
+            'reference' => '8.3.3',
+            'dev_requirement' => false,
         ),
         'drupal/taxonomy' => array(
             'dev_requirement' => false,

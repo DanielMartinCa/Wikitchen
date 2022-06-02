@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - block_content.type.simple_text
     - core.entity_view_display.comment.comment.default
     - field.field.node.receta.body
     - field.field.node.receta.comment
@@ -78,6 +79,20 @@ third_party_settings:
                       text: ''
                     token: ''
             weight: 0
+            additional: {  }
+          4d4f90f2-84d6-49c7-9a2d-816db0d2b292:
+            uuid: 4d4f90f2-84d6-49c7-9a2d-816db0d2b292
+            region: content
+            configuration:
+              id: 'inline_block:simple_text'
+              label: a
+              label_display: '0'
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 4
+              block_serialized: null
+            weight: 1
             additional: {  }
         third_party_settings: {  }
       -
@@ -346,6 +361,27 @@ third_party_settings:
                       rel: ''
                       text: ''
                     token: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: a
+          context_mapping: {  }
+        components:
+          dc9216b3-9153-4f49-9bf1-e18c357b1b3e:
+            uuid: dc9216b3-9153-4f49-9bf1-e18c357b1b3e
+            region: content
+            configuration:
+              id: 'inline_block:simple_text'
+              label: a
+              label_display: '0'
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 5
+              block_serialized: null
             weight: 0
             additional: {  }
         third_party_settings: {  }

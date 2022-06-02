@@ -22,6 +22,7 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/creative_responsive_theme": "^2.0",
         "drupal/editor_advanced_link": "^2.0",
         "drupal/editor_file": "^1.6",
         "drupal/field_group": "^3.2",
@@ -30,6 +31,7 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/layoutcomponents": "^3.0",
         "drupal/pathauto": "^1.10",
+        "drupal/tara": "^8.3",
         "drupal/taxonomy_menu": "^3.5",
         "drupal/taxonomy_unique": "^2.3",
         "drush/drush": "^11.0"
