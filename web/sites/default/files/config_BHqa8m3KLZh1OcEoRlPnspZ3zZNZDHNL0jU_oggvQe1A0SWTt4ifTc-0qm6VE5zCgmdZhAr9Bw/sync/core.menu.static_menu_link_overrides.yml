@@ -3,9 +3,9 @@ _core:
 langcode: es
 definitions:
   contact__site_page:
+    weight: -50
     menu_name: footer
     parent: ''
-    weight: 0
     expanded: false
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__ingredientes__1':
