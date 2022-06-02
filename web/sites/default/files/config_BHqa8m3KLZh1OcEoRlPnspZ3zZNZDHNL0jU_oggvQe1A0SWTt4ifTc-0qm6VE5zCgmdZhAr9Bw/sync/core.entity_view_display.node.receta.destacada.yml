@@ -94,7 +94,7 @@ third_party_settings:
                 label: hidden
                 settings:
                   image_link: content
-                  image_style: medium
+                  image_style: large
                 third_party_settings:
                   linked_field:
                     linked: 0

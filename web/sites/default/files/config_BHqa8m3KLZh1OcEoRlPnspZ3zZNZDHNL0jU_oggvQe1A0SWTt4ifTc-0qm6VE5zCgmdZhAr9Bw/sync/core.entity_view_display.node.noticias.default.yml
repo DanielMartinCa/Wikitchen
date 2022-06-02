@@ -48,16 +48,35 @@ third_party_settings:
             region: content
             configuration:
               id: 'field_block:node:noticias:field_image'
+              label: Image
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: image
                 label: hidden
                 settings:
                   image_link: ''
-                  image_style: ''
-                third_party_settings: {  }
+                  image_style: max_650x650
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+                    token: ''
             weight: 1
             additional: {  }
           3338dd61-c7af-4f6e-8ab1-feafbd251c86:
@@ -106,31 +125,13 @@ third_party_settings:
             region: content
             configuration:
               id: 'views_block:noticias_relacionadas-block_1'
-              label: ''
+              label: 'Noticias relacionadas'
               label_display: visible
               provider: views
               context_mapping: {  }
-              views_label: ''
+              views_label: 'Noticias relacionadas'
               items_per_page: none
             weight: 5
-            additional: {  }
-          850d50e6-aebe-4811-933e-a24a7b7f7999:
-            uuid: 850d50e6-aebe-4811-933e-a24a7b7f7999
-            region: content
-            configuration:
-              id: 'field_block:node:noticias:field_destacada'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: boolean
-                label: above
-                settings:
-                  format: default
-                  format_custom_false: ''
-                  format_custom_true: ''
-                third_party_settings: {  }
-            weight: 6
             additional: {  }
         third_party_settings: {  }
 id: node.noticias.default

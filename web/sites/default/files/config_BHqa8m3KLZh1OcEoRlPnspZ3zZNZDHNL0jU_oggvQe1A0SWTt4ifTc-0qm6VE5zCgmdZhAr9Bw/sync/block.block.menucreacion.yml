@@ -30,5 +30,6 @@ visibility:
     context_mapping:
       user: '@user.current_user_context:current_user'
     roles:
+      authenticated: authenticated
       content_editor: content_editor
       administrator: administrator
